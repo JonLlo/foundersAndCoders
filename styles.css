@@ -10,7 +10,7 @@ body {
 
 /* Navbar Styling */
 .navbar {
-    background-color:#800020;
+    background-color:lightblue;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -72,10 +72,10 @@ body {
     width: 90%;
     max-width: 3000px;
     min-width: 2900px; 
-    background-color:#800020; /* Light-colored scroll effect */
+    background-color:lightblue;
     padding: 50px;
     margin-top: 200px;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,31 +97,30 @@ body {
     height: 800px; /* Set the height of the image */
     border-radius: 50%; /* Makes the image round */
     cursor: pointer; /* Makes the image clickable */
-    margin-left: 200px;
-    margin-top: 300px;
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-right: 60px;
 }
 
 /* Text container */
-.text-box {
+.text-box-name {
     font-family: 'circular'; /* Use a clean, modern font */
     color: black; /* Darker color for the text for better readability */
     padding: 30px; /* Adds more padding for a spacious feel */
     border-radius: 10px; /* Rounded corners for the text box */
     width: 50%; /* Controls the width of the text box */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the box */
     margin-right: 200px;
     display: flex;
-    background-color: white;
     flex-direction: column; /* Arrange the content vertically */
     justify-content: center; /* Vertically center the content */
     align-items: center; /* Horizontally center the content */
     text-align: center; /* Ensure text is centered within the container */
-    margin-top: 350px;
+    margin-top: 50px;
    
 }
 
 /* Heading */
-.text-box h1 {
+.text-box-name h1 {
     font-size: 15.5rem; /* Size of the header */
     font-weight: 600; /* Makes the header text a bit bolder */
     color: black; /* Darker color for the header */
@@ -140,22 +139,24 @@ body {
 .section-two {
     justify-content: center;
     display: flex;
+    flex-direction: column; /* Arrange the content vertically */
+
+
+
 }
 
 .text-box-2 {
     font-family: 'circular'; /* Use a clean, modern font */
-    color: black; /* Darker color for the text for better readability */
     padding: 30px; /* Adds more padding for a spacious feel */
     border-radius: 10px; /* Rounded corners for the text box */
     width: 100%; /* Controls the width of the text box */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the box */
     display: flex;
-    background-color: white;
     flex-direction: column; /* Arrange the content vertically */
     justify-content: center; /* Vertically center the content */
     align-items: center; /* Horizontally center the content */
     text-align: center; /* Ensure text is centered within the container */
-    margin-top: 300px;
+    margin-bottom: 1000px;
+  
    
 }
 
@@ -173,3 +174,41 @@ body {
 }
 
 
+/*button section*/
+
+
+.button-section {
+    display: flex;
+    flex-direction: column; /* Stacks buttons vertically */
+    align-items: center; /* Centers the buttons horizontally */
+    gap: 20px; /* Adds space between buttons */
+    margin-top: 30px; /* Adds space above the button section */
+}
+
+.button-section button {
+    background-color: #4CAF50; /* Green background for the button */
+    color: white; /* White text */
+    font-size: 36px; /* Makes the text slightly bigger */
+    padding: 102px 20px; /* Padding inside the button for a larger clickable area */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    width: 250px; /* Consistent width for all buttons */
+    cursor: pointer; /* Pointer cursor to indicate interactivity */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.button-section button:hover {
+    background-color: #45a049; /* Darker green when hovered */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.button-section button:focus {
+    outline: none; /* Removes the outline when focused */
+    border: 2px solid #45a049; /* Adds a green border when focused */
+}
+
+.button-section button:active {
+    background-color: #388e3c; /* Even darker green when clicked */
+    transform: translateY(1px); /* Small inward movement when clicked */
+}
