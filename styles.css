@@ -68,9 +68,10 @@ body {
 }
 
 /* Scroll Container */
-.scroll-container {
-    width: 80%;
-    max-width: 3000px; 
+.scroll {
+    width: 90%;
+    max-width: 3000px;
+    min-width: 2900px; 
     background-color:#800020; /* Light-colored scroll effect */
     padding: 50px;
     margin-top: 200px;
@@ -81,5 +82,94 @@ body {
 }
 
 /* Sections */
+
+/* Section container */
+.section-one {
+    display: flex; /* Use flexbox to arrange the items side by side */
+    align-items: flex-start; /* Vertically center the image and text */
+    justify-content: space-between; /* Space out the image and text box */
+    padding: 50px; /* Optional: adds padding around the section */
+}
+
+/* Image */
+#me {
+    width: 800px; /* Set the width of the image */
+    height: 800px; /* Set the height of the image */
+    border-radius: 50%; /* Makes the image round */
+    cursor: pointer; /* Makes the image clickable */
+    margin-left: 200px;
+    margin-top: 300px;
+}
+
+/* Text container */
+.text-box {
+    font-family: 'circular'; /* Use a clean, modern font */
+    color: black; /* Darker color for the text for better readability */
+    padding: 30px; /* Adds more padding for a spacious feel */
+    border-radius: 10px; /* Rounded corners for the text box */
+    width: 50%; /* Controls the width of the text box */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the box */
+    margin-right: 200px;
+    display: flex;
+    background-color: white;
+    flex-direction: column; /* Arrange the content vertically */
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    text-align: center; /* Ensure text is centered within the container */
+    margin-top: 350px;
+   
+}
+
+/* Heading */
+.text-box h1 {
+    font-size: 15.5rem; /* Size of the header */
+    font-weight: 600; /* Makes the header text a bit bolder */
+    color: black; /* Darker color for the header */
+    margin-bottom: 20px; /* Adds space below the header */
+}
+
+
+
+.section-one {
+    display: flex; /* Use flexbox to arrange the items side by side */
+    align-items: flex-start; /* Vertically center the image and text */
+    justify-content: space-between; /* Space out the image and text box */
+    padding: 50px; /* Optional: adds padding around the section */
+}
+
+.section-two {
+    justify-content: center;
+    display: flex;
+}
+
+.text-box-2 {
+    font-family: 'circular'; /* Use a clean, modern font */
+    color: black; /* Darker color for the text for better readability */
+    padding: 30px; /* Adds more padding for a spacious feel */
+    border-radius: 10px; /* Rounded corners for the text box */
+    width: 100%; /* Controls the width of the text box */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the box */
+    display: flex;
+    background-color: white;
+    flex-direction: column; /* Arrange the content vertically */
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    text-align: center; /* Ensure text is centered within the container */
+    margin-top: 300px;
+   
+}
+
+.text-box-2 h1 {
+    font-size: 200px;
+
+
+}
+
+.text-box-2 p { 
+    align-self: left;
+    font-size: 50px; /* Size of the header */
+
+    
+}
 
 
