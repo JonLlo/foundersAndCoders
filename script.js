@@ -56,4 +56,3 @@ checkButton.addEventListener('click', () => {
     }
 });
 
-
