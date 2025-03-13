@@ -178,15 +178,7 @@ body {
 
 /*button section*/
 
-
-.button-section {
-    display: flex;
-    flex-direction: column; /* Stacks buttons vertically */
-    align-items: center; /* Centers the buttons horizontally */
-    gap: 20px; /* Adds space between buttons */
-    margin-top: 30px; /* Adds space above the button section */
-}
-
+/* Style for buttons inside the button-section container */
 .button-section button {
     background-color: #4CAF50; /* Green background for the button */
     color: white; /* White text */
@@ -199,23 +191,55 @@ body {
     transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
+/* Hover effect for the button inside button-section */
 .button-section button:hover {
     background-color: #45a049; /* Darker green when hovered */
     transform: translateY(-2px); /* Slight upward movement on hover */
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
+/* Focus effect for the button inside button-section */
 .button-section button:focus {
     outline: none; /* Removes the outline when focused */
     border: 2px solid #45a049; /* Adds a green border when focused */
 }
 
+/* Active effect for the button inside button-section */
 .button-section button:active {
     background-color: #388e3c; /* Even darker green when clicked */
     transform: translateY(1px); /* Small inward movement when clicked */
 }
 
+/* Style for the autofill button */
+.autofill {
+    background-color: #4CAF50; /* Green background for the autofill button */
+    color: white; /* White text */
+    font-size: 36px; /* Makes the text slightly bigger */
+    padding: 102px 20px; /* Padding inside the button for a larger clickable area */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    width: 250px; /* Consistent width for all buttons */
+    cursor: pointer; /* Pointer cursor to indicate interactivity */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
 
+/* Hover effect for the autofill button */
+.autofill:hover {
+    background-color: #45a049; /* Darker green when hovered */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Focus effect for the autofill button */
+.autofill:focus {
+    outline: none; /* Removes the outline when focused */
+    border: 2px solid #45a049; /* Adds a green border when focused */
+}
+
+/* Active effect for the autofill button */
+.autofill:active {
+    background-color: #388e3c; /* Even darker green when clicked */
+    transform: translateY(1px); /* Small inward movement when clicked */
+}
 
 
 
@@ -311,7 +335,7 @@ body {
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     grid-template-rows: repeat(2, 1fr); /* 2 rows */
     gap: 5px; /* Adjust spacing between pieces */
-    margin-top: 110px;
+    margin-top: 282px;
 
 }
 
@@ -358,7 +382,7 @@ body {
 .intro-two {
     font-size: 100px;
     margin-top: 100px;
-    margin-bottom: 90px;
+    margin-bottom: 170px;
 
 }
 
@@ -366,3 +390,23 @@ body {
     position: absolute;
   ; /* Adjust this value to move it as far right as you need */
 }
+
+
+.spare-auto {
+    display: flex;
+    flex-direction: column;
+}
+
+.who-auto {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.autofill {
+    transform: translateY(-80px); /* Moves the button 10px upwards */
+    margin-left: 50px;
+
+   
+}
+

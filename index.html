@@ -31,10 +31,17 @@
             </div>
             <div class="intro-two">   
                      <p>Solve the Puzzles below to find some info about me! </p>
+                     <p style="font-size: 50px; font-style: italic; text-align: center;">Drag the pieces on the right into the grid on the left!</p>
+
             </div>
             <div class="puzzles">
                 <div class="puzzle-container">
-                    <p>WHO AM I?</p>
+                    <div class = "who-auto">
+                        <p>WHO AM I?</p>
+                        <button id="autofill" class ="autofill" style="display: hidden;">click to cheat</button>
+                    </div>
+                    <br><br>
+                    
                     <div id="grid">
                         <!-- Drop areas -->
                         <div class="drop-zone" data-order="1"></div>
@@ -53,7 +60,8 @@
                     <img src="images/whySplit/row-1-column-3.jpg" id="piece3" class="puzzle-piece" draggable="true" data-id="3">
                     <img src="images/whySplit/row-1-column-2.jpg" id="piece2" class="puzzle-piece" draggable="true" data-id="2">
                     <img src="images/whySplit/row-2-column-2.jpg" id="piece5" class="puzzle-piece" draggable="true" data-id="5">
-                    <div id="spare-zone" class="drop-zone spare-zone" style="display: none;"></div>
+                        <div id="spare-zone" class="drop-zone spare-zone" style="display: none;"></div>
+
 
                 </div>
 
