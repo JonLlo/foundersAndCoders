@@ -1,6 +1,8 @@
 const pieces = document.querySelectorAll('.puzzle-piece');
 const dropZones = document.querySelectorAll('.drop-zone');
 const checkButton = document.getElementById('check-button');
+const spareZone = document.getElementById('spare-zone'); 
+
 
 pieces.forEach(piece => {
     piece.addEventListener('dragstart', dragStart);
@@ -36,8 +38,18 @@ function drop(event) {
     // Now check if the drop zone already has a piece inside
     if (dropZone.children.length === 0) {
         dropZone.appendChild(piece);
-    } else {
-        alert('no');
+        checkCompletion()
+        
+    } 
+    
+}
+
+
+function checkCompletion() {
+    const allFilled = [...dropZones].filter(zone => zone !== spareZone).every(zone => zone.children.length > 0);
+    if (allFilled) {
+        alert('done!');
+        spareZone.style.display = 'block'; // Unhide the spare zone once all pieces are placed
     }
 }
 

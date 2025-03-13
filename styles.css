@@ -362,3 +362,7 @@ body {
 
 }
 
+.spare-zone {
+    position: absolute;
+  ; /* Adjust this value to move it as far right as you need */
+}
