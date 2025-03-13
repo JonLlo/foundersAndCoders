@@ -22,37 +22,23 @@ function dragOver(event) {
 
 function drop(event) {
     event.preventDefault();
-    const pieceId = event.dataTransfer.getData('text');
     const pieceElementId = event.dataTransfer.getData('elementId');
     const piece = document.getElementById(pieceElementId);
-    
-    if (!event.target.hasChildNodes()) {
-        event.target.appendChild(piece);
+
+    // Ensure event.target is actually the drop zone
+    let dropZone = event.target;
+    if (!dropZone.classList.contains('drop-zone')) {
+        dropZone = dropZone.closest('.drop-zone'); // Get the closest drop-zone parent
+    }
+
+    if (!dropZone) return; // If no valid drop zone is found, exit
+
+    // Now check if the drop zone already has a piece inside
+    if (dropZone.children.length === 0) {
+        dropZone.appendChild(piece);
+    } else {
+        alert('no');
     }
 }
 
-// Check if the puzzle is correct
-checkButton.addEventListener('click', () => {
-    let correct = true;
-
-    dropZones.forEach(zone => {
-        const placedPiece = zone.firstChild;
-        if (placedPiece) {
-            const pieceId = placedPiece.dataset.id;
-            const correctId = zone.dataset.order;
-
-            if (pieceId !== correctId) {
-                correct = false;
-            }
-        } else {
-            correct = false;
-        }
-    });
-
-    if (correct) {
-        alert("🎉 Congratulations! You solved the puzzle!");
-    } else {
-        alert("❌ Incorrect. Try again!");
-    }
-});
 
