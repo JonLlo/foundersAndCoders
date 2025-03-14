@@ -80,3 +80,55 @@ function autoFillGrid() {
 
     checkCompletion(); // After autofill, check if the puzzle is completed
 }
+
+
+
+// Get references to the button and the hidden content
+const button = document.getElementById('revealButton');
+const hiddenContent = document.getElementById('hiddenContent');
+
+// Add an event listener to the button
+button.addEventListener('click', function() {
+    // Toggle the display of hidden content
+    if (hiddenContent.style.display === 'block') {
+        hiddenContent.style.display = 'none'; // Hide it
+        button.innerText = 'Click here to reveal my favourite Maths Theorem'; // Change button text back
+    } else {
+        hiddenContent.style.display = 'block'; // Show it
+        button.innerText = 'Hide Theorem'; // Change button text to 'Hide Theorem'
+    }
+});
+
+
+// Get references to the button and the hidden content
+const buttonDJ = document.getElementById('revealButton-dj');
+const hiddenContentDJ = document.getElementById('hiddenContent-dj');
+const audioPlayer = document.getElementById('audio-player');
+
+
+// Add an event listener to the button
+buttonDJ.addEventListener('click', function() {
+    // Toggle the display of hidden content
+    if (hiddenContentDJ.style.display === 'block') {
+        hiddenContentDJ.style.display = 'none'; // Hide it
+        buttonDJ.innerText = 'Click here to reveal one of my favourite songs that got me into Djing'; // Change button text back
+    } else {
+        hiddenContentDJ.style.display = 'block'; // Show it
+        buttonDJ.innerText = 'Hide Song'; // Change button text to 'Hide Theorem'
+    }
+});
+
+const playButton = document.getElementById('play-button')
+
+    // Play the audio when th
+   
+    playButton.addEventListener('click', function() {
+        if (audioPlayer.paused) {
+            audioPlayer.currentTime = 5;
+            audioPlayer.play(); // Play the audio
+            playButton.innerHTML = '⏸️'; // Change to pause button when playing
+        } else {
+            audioPlayer.pause(); // Pause the audio
+            playButton.innerHTML = '▶️'; // Change to play button when paused
+        }
+    });
