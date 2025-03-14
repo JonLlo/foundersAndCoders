@@ -1,14 +1,9 @@
-//alert blocker
-window.alert = function() {};
+const themeChange = document.getElementById('theme-change');
 
+themeChange.addEventListener('click', function() {
+//TO DO 
+});
 
-
-const themeChange = document.getElementById('theme-change');  
-
-themeChange.onclick = function() {
-    alert('yuyu')
-    document.body.style.backgroundColor = 'red';  // Change background color to red
-};
 
 
 
@@ -17,6 +12,12 @@ const dropZones = document.querySelectorAll('.drop-zone');
 const checkButton = document.getElementById('check-button');
 const spareZone = document.getElementById('spare-zone'); 
 const autoFill = document.getElementById('autofill'); 
+
+
+
+
+
+
 
 
 pieces.forEach(piece => {
