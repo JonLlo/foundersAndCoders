@@ -595,3 +595,42 @@ iframe {
     .play-button:hover {
         background-color: #45a049; /* Darker green when hovering */
     }
+
+        /* Fast Forward button style */
+        .fast-forward-button {
+            font-size: 100px; /* Big play button */
+            padding: 20px 40px; /* Make it bigger */
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        .fast-forward-button:hover {
+            background-color: #45a049;
+        }
+
+
+
+        /*Loonies*/
+
+
+        .reveal-button-photo {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            font-size: 48px; /* Font size */
+            padding: 15px 32px; /* Padding around the text */
+            text-align: center; /* Center text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block;
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s ease; /* Smooth color transition */
+        }
+    
+        .reveal-button-photo:hover {
+            background-color: #45a049;
+        }

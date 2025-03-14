@@ -111,7 +111,7 @@ buttonDJ.addEventListener('click', function() {
     // Toggle the display of hidden content
     if (hiddenContentDJ.style.display === 'block') {
         hiddenContentDJ.style.display = 'none'; // Hide it
-        buttonDJ.innerText = 'Click here to reveal one of my favourite songs that got me into Djing'; // Change button text back
+        buttonDJ.innerText = 'Click here to reveal one of my favourite songs that I liked to play at the bars at the time!'; // Change button text back
     } else {
         hiddenContentDJ.style.display = 'block'; // Show it
         buttonDJ.innerText = 'Hide Song'; // Change button text to 'Hide Theorem'
@@ -119,6 +119,8 @@ buttonDJ.addEventListener('click', function() {
 });
 
 const playButton = document.getElementById('play-button')
+const fastForwardButton = document.getElementById('fast-forward-button');
+
 
     // Play the audio when th
    
@@ -130,5 +132,22 @@ const playButton = document.getElementById('play-button')
         } else {
             audioPlayer.pause(); // Pause the audio
             playButton.innerHTML = '▶️'; // Change to play button when paused
+        }
+    });
+
+    fastForwardButton.addEventListener('click', function() {
+        audioPlayer.currentTime += 10; // Fast forward by 10 seconds
+    });
+
+
+
+    document.getElementById('revealButton-photo').addEventListener('click', function() {
+        var hiddenPhoto = document.getElementById('hiddenContent-photo');
+        if (hiddenPhoto.style.display === 'block') {
+            hiddenPhoto.style.display = 'none';
+            this.innerText = 'Click here to reveal The Loonies DVD cover...';
+        } else {
+            hiddenPhoto.style.display = 'block';
+            this.innerText = 'Hide Photo';
         }
     });

@@ -92,15 +92,25 @@
          
                     
 
-
-          
                     <div class="timeline__component timeline__component--bg">
                         <h2 class="timeline__title">School</h2>
-                        <p class="timeline__paragraph">I was born in Islington, London! I don't remember this so there's not much to say! 
-                            I was born in Islington, London! I don't remember this so there's not much to say!
-                            I was born in Islington, London! I don't remember this so there's not much to say!
-                            I was born in Islington, London! I don't remember this so there's not much to say!</p>
+                        <p class="timeline__paragraph">
+                            I went to Primary school and secondary school in Camden. My favourite subject was maths and my main hobby was film making.
+                            Throughout my school years, me and my friends created a TV show called The Loonies. We created 70 episodes and put them on DVD. 
+                            They are so fun to look back on. I created the covers for them too!
+                        </p>
+                    
+                        <!-- The Button -->
+                        <div class="rev-button-container">
+                            <button id="revealButton-photo" class="reveal-button-photo">Click here to reveal The Loonies DVD cover...</button>
+                        </div>
+                    
+                        <!-- Hidden content that will be revealed on button click -->
+                        <div id="hiddenContent-photo" style="display: none; text-align: center; margin-top: 20px;">
+                            <img src="images/loonies2.jpg" alt="The Loonies DVD Cover" style="max-width: 100%; height: auto; border-radius: 10px;">
+                        </div>
                     </div>
+                    
                     <div class="timeline__middle">
                         <div class="timeline__point"></div>
                     </div>
@@ -143,11 +153,18 @@
                         <!-- Hidden content that will be revealed on button click -->
                         <div id="hiddenContent" style="display: none;">
                             <br><br>
-                            <p style="font-size: 40px; font-style: italic; text-align: center;"> The Friendship Theorem</p>
-                            <br>
+                            <p style="font-size: 40px; font-style: italic; text-align: center;">
+                                <a href="https://en.wikipedia.org/wiki/Friendship_graph#:~:text=Friendship%20theorem,-The%20friendship%20theorem&text=Informally%2C%20if%20a%20group%20of,cardinality%20that%20have%20this%20property." 
+                                   target="_blank" 
+                                   style="text-decoration: none; color: inherit;"
+                                   onmouseover="this.style.color='blue'; this.style.textDecoration='underline';"
+                                   onmouseout="this.style.color='inherit'; this.style.textDecoration='none';">
+                                    The Friendship Theorem
+                                </a>
+                            </p>
                             <p style="font-size: 50px; font-style: italic; text-align: center;">
-                                In a finite society with the property that any pair of persons has exactly one common friend,
-                                then there is one person who is everyone's friend.
+                                If a group of people has the property that every pair of people has exactly one friend in common, 
+                                then there must be one person who is a friend to all the others.
                             </p>
                             <iframe width="860" height="530" src="https://www.youtube.com/embed/RIir0_LOC7o" frameborder="0" allowfullscreen></iframe>
                         </div>
@@ -173,26 +190,34 @@
                         <div class="timeline__point"></div>
                     </div>
                     <div class="timeline__component timeline__component--bg">
-                        <h2 class="timeline__title">School + DJ</h2>
-                        <p class="timeline__paragraph">I was born in Islington, London! I don't remember this so there's not much to say! 
-                            I was born in Islington, London! I don't remember this so there's not much to say!
-                            I was born in Islington, London! I don't remember this so there's not much to say!
-                            I was born in Islington, London! I don't remember this so there's not much to say!
-                            
-                            I also worked at a bar mixing CDs, carrying on my love for music thta I got at university
+                        <h2 class="timeline__title">Finished Uni</h2>
+                        <p class="timeline__paragraph">At this point, a few of my friends were still at Uni in Leeds and I was not sure what I wanted to do. Covid rules were just undoing and I decided
+                            it could be fun to work at a school. I did this, supporting children, and at the same time, I worked on my DJ skills and started Djing at bars around Leeds.
                         
                         </p>
                                                 <!-- The Button -->
                         <div class = "rev-button-container">
-                            <button id="revealButton-dj" class="reveal-button-dj">Click here to reveal one of my favourite songs that got me into Djing</button>
+                            <button id="revealButton-dj" class="reveal-button-dj">Click here to reveal one of my favourite songs that I liked to play at the bars at the time!</button>
                             </div>
                             <!-- Hidden content that will be revealed on button click -->
                             <div id="hiddenContent-dj" style="display: none;">
                                 <br><br>
-                                <p style="font-size: 40px; font-style: italic; text-align: center;"> Everybody (All Over The World) (Dance Version)</p>
+                                <p style="font-size: 40px; font-style: italic; text-align: center;">
+                                    <a href="https://www.discogs.com/master/33884-FPI-Project-Everybody-All-Over-The-World?srsltid=AfmBOopPiEWEDGJdpL5OkZN6zp2tf19XDtcKp1rfw2arnoCwQBvIXeX5" target="_blank" 
+                                       style="text-decoration: none; color: inherit;"
+                                       onmouseover="this.style.color='blue'; this.style.textDecoration='underline';"
+                                       onmouseout="this.style.color='inherit'; this.style.textDecoration='none';">
+                                        Everybody (All Over The World) (Dance Version)
+                                    </a>
+                                </p>
                                 <br>
                                 <p style="font-size: 50px; font-style: italic; text-align: center;">
-                                   Artist - FPI PROJECT 
+                                    <a href="https://it.wikipedia.org/wiki/F.P.I._Project" target="_blank" 
+                                       style="text-decoration: none; color: inherit;"
+                                       onmouseover="this.style.color='blue'; this.style.textDecoration='underline';"
+                                       onmouseout="this.style.color='inherit'; this.style.textDecoration='none';">
+                                        Artist - FPI PROJECT
+                                    </a>
                                 </p>
                                    <!-- HTML Audio Player with custom play button -->
                                 <div class="audio-container">
@@ -200,7 +225,12 @@
                                         <source src="mp3/fpi.mp3" type="audio/mp3">
                                         Your browser does not support the audio element.
                                     </audio>
-                                    <button id="play-button" class="play-button">▶️</button>
+                                    <div class="button-group">
+                                        <button id="play-button" class="play-button">▶️</button>
+                                        <button id="fast-forward-button" class="fast-forward-button">⏩</button>
+                                    </div>
+
+
                                     
                                 </div>
                             </div>
@@ -213,11 +243,18 @@
 
           
                     <div class="timeline__component timeline__component--bg">
-                        <h2 class="timeline__title">Digital Marketing</h2>
-                        <p class="timeline__paragraph">I was born in Islington, London! I don't remember this so there's not much to say! 
-                            I was born in Islington, London! I don't remember this so there's not much to say!
-                            I was born in Islington, London! I don't remember this so there's not much to say!
-                            I was born in Islington, London! I don't remember this so there's not much to say!</p>
+                        <h2 class="timeline__title">Digital Marketing and Events</h2>
+                        <p class="timeline__paragraph">
+                            
+                            I got a job in marketing, which was fun, but the more I got into it, the more
+                            I realised how much I enjoyed the small oart of it that was coding, and how much I missed solving Maths problems. 
+                            It was then that I realised it was time to change...
+
+
+                           
+                            I also started a bi-yearly club night on the side, where we'd hire DJs - it was my was of keeping my creativity.
+                            
+                        </p>
                     </div>
                     <div class="timeline__middle">
                         <div class="timeline__point"></div>
