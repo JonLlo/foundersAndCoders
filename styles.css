@@ -218,7 +218,6 @@ body {
     padding: 102px 20px; /* Padding inside the button for a larger clickable area */
     border: none; /* No border */
     border-radius: 8px; /* Rounded corners */
-    width: 250px; /* Consistent width for all buttons */
     cursor: pointer; /* Pointer cursor to indicate interactivity */
     transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
@@ -238,7 +237,6 @@ body {
 /* Active effect for the autofill button */
 .autofill:active {
     background-color: #388e3c; /* Even darker green when clicked */
-    transform: translateY(1px); /* Small inward movement when clicked */
 }
 
 
@@ -351,7 +349,7 @@ body {
 
 .puzzles {
     display: flex;
-    flex-direction: rowl
+    margin-bottom: 200px;
 
 }
 
@@ -412,3 +410,5 @@ body {
    
 }
 
+
+  

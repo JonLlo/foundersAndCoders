@@ -50,7 +50,7 @@ function checkCompletion() {
     const allFilled = [...dropZones].filter(zone => zone !== spareZone).every(zone => zone.children.length > 0);
     if (allFilled) {
         spareZone.style.display = 'block'; // Unhide the spare zone once all pieces are placed
-        autoFill.style.display = 'block'; // Unhide the spare zone once all pieces are placed
+        //autoFill.style.display = 'block'; // Unhide the spare zone once all pieces are placed
 
     }
 }
