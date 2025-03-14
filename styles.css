@@ -9,6 +9,11 @@ body {
     background-color: lightblue;
 }
 
+
+
+/*change theme button*/
+
+
 /* Navbar Styling */
 .navbar {
     background-color:lightblue;
@@ -642,27 +647,43 @@ iframe {
             border-radius: 22px;
         }
 
-        .gaz {
-            width: 100%;
-            text-align: center;
-        }
-    
-        .iframe-container {
-            width: 375px;  /* Set to 375px (width of the mobile device) */
-            height: 667px; /* Set to 667px (height of the mobile device) */
-            margin: 0 auto; /* Center the iframe horizontally */
-        }
-    
-        .iframe-container iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    
-        .gaz p {
-            max-width: 80%;
-            margin: 20px auto;
-            font-size: 20px;
-        }
-    
-   
+
+           /*Gaz*/
+    /* Gaz */
+.gaz {
+    display: flex; /* Use flexbox to position elements side by side */
+    justify-content: space-between; /* Space out the iframe and text */
+    align-items: center; /* Vertically align the iframe and text in the center */
+    width: 100%;
+    flex-direction: column;
+    text-align: left; /* Align text to the left */
+    margin: 0 auto;
+}
+
+.iframe-container {
+    width: 3000px;
+    height: 1400px;
+  
+
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin-left: 0px; /*not sure why this helps but it does*/
+    zoom: 2.6;
+    transform-origin: 0 0; /* Scale from the top-left corner */
+}
+
+.gaz p {
+    max-width: 50%; /* Limit the width of the text block */
+    font-size: 18px; /* Adjust font size for readability */
+    margin-top: 200px; /* Add spacing between iframe and text */
+
+}
+
+.next {
+    margin-top: 2000px;
+}

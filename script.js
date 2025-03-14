@@ -1,3 +1,17 @@
+//alert blocker
+window.alert = function() {};
+
+
+
+const themeChange = document.getElementById('theme-change');  
+
+themeChange.onclick = function() {
+    alert('yuyu')
+    document.body.style.backgroundColor = 'red';  // Change background color to red
+};
+
+
+
 const pieces = document.querySelectorAll('.puzzle-piece');
 const dropZones = document.querySelectorAll('.drop-zone');
 const checkButton = document.getElementById('check-button');
@@ -151,3 +165,4 @@ const fastForwardButton = document.getElementById('fast-forward-button');
             this.innerText = 'Hide Photo';
         }
     });
+

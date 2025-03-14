@@ -25,7 +25,7 @@
 
                 </div>
                 <div class = button-section>
-                    <button>Change Theme</button>
+                    <button id="theme-change">Change Theme</button>
                     <button>Change to Spanish</button>
                 </div>
             </div>
@@ -311,26 +311,28 @@
             </div>
             <div class="projects">
                 <div class="intro-two">   
-                    <p>Lets have a look at my projects: </p>
-
+                    <p style="text-align: center; ">Lets have a look at my projects: </p>
+            
                     <h1 style="text-align: center; margin-top: 100px; margin-bottom: 100px;">GAZETTEER</h1>
                     <div class="gaz">
+                        <!-- Left side: iframe -->
                         <div class="iframe-container">
-                            <iframe src="https://jonllogazetteer.com/" title="Example Website"></iframe>
+                            <!--want to avoid alerts from inside-->
+                            <iframe src="https://jonllogazetteer.com/" title="Example Website" sandbox="allow-scripts allow-forms allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+
                         </div>
-                        <p>
+            
+                        <!-- Right side: text -->
+                        <p style="font-size: 50px; font-style: italic; text-align: center; padding-right: 200px">
                             Gazetteer is a mobile-friendly website designed to profile countries by presenting demographic, climatic, 
                             geographical, and other relevant data. The website utilizes third-party APIs such as OpenCage, Open Weather, 
                             Geonames, Rest Countries, and Open Exchange Rates to gather and display data. The user interface is built with HTML/CSS, 
                             JavaScript, JQuery, and PHP, ensuring a responsive and interactive experience across both mobile and desktop devices.
                         </p>
                     </div>
-    
                 </div>
-
-
             </div>
-
+            <div class="next"></div>
 
         </div>
 
