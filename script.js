@@ -1,8 +1,74 @@
 const themeChange = document.getElementById('theme-change');
+const themes = ['lightblue', 'lightyellow', 'darkred']; // Background colors
+const buttonThemes = ['#4CAF50', '#FFA500', 'darkblue']; // Button colors (green, orange, dark red)
+let currentTheme = 0; // Track the current theme
 
-themeChange.addEventListener('click', function() {
-//TO DO 
+// Find and mark originally white text
+document.querySelectorAll('*').forEach(el => {
+    const computedColor = window.getComputedStyle(el).color;
+    if (computedColor === 'rgb(255, 255, 255)') { // White text
+        el.classList.add('original-white');
+    }
 });
+
+themeChange.addEventListener('click', () => {
+    currentTheme = (currentTheme + 1) % themes.length; // Cycle through themes
+    document.body.style.backgroundColor = themes[currentTheme];
+
+    // Change navbar and scroll elements
+    document.querySelectorAll('.navbar, .scroll').forEach(el => {
+        el.style.backgroundColor = themes[currentTheme];
+    });
+
+    // Change all buttons (including the theme change button itself)
+    document.querySelectorAll('button').forEach(button => {
+        button.style.backgroundColor = buttonThemes[currentTheme];
+    });
+
+    // Update originally white text: Black on yellow, White otherwise
+    document.querySelectorAll('.original-white').forEach(el => {
+        el.style.color = (currentTheme === 1) ? 'black' : 'white';
+    });
+
+    // Adjust body text color for readability
+    document.body.style.color = currentTheme === 2 ? 'white' : 'black'; // White on dark red, black otherwise
+});
+
+
+
+
+document.getElementById("change-to-spanish").addEventListener("click", function () {
+    // Change button text
+    this.textContent = "Cambiar a inglés"; 
+
+    // Change various texts to Spanish
+    document.querySelector(".intro-two p").textContent = "¡Resuelve los acertijos a continuación para encontrar información sobre mí!";
+    document.querySelector(".intro-two p:nth-of-type(2)").textContent = "¡Arrastra las piezas de la derecha a la cuadrícula de la izquierda!";
+    document.querySelector(".who-auto p").textContent = "¿QUIÉN SOY?";
+    document.getElementById("autofill").textContent = "Haz clic para hacer trampa";
+
+    // Change timeline headings
+    document.querySelectorAll(".timeline__title")[0].textContent = "Nací";
+    document.querySelectorAll(".timeline__title")[1].textContent = "Escuela";
+    document.querySelectorAll(".timeline__title")[2].textContent = "Año sabático";
+    document.querySelectorAll(".timeline__title")[3].textContent = "Universidad";
+    document.querySelectorAll(".timeline__title")[4].textContent = "Terminé la universidad";
+    document.querySelectorAll(".timeline__title")[5].textContent = "Marketing digital y eventos";
+    document.querySelectorAll(".timeline__title")[6].textContent = "Cambio de carrera";
+    document.querySelectorAll(".timeline__title")[7].textContent = "El futuro...";
+
+    // Add logic to toggle back to English
+    this.addEventListener("click", function () {
+        location.reload(); // Reloads the page to reset to English
+    });
+});
+
+
+
+
+
+
+
 
 
 
