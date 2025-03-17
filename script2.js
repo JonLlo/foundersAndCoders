@@ -10,7 +10,7 @@ pieces2.forEach(piece => {
 
 dropZones2.forEach(zone => {
     zone.addEventListener('dragover', dragOver);
-    zone.addEventListener('drop', drop);
+    zone.addEventListener('drop', drop2);
 });
 
 function dragStart(event) {
@@ -22,7 +22,7 @@ function dragOver(event) {
     event.preventDefault();
 }
 
-function drop(event) {
+function drop2(event) {
     event.preventDefault();
     const pieceElementId = event.dataTransfer.getData('elementId');
     const piece = document.getElementById(pieceElementId);
@@ -38,7 +38,7 @@ function drop(event) {
     // Now check if the drop zone already has a piece inside
     if (dropZone.children.length === 0) {
         dropZone.appendChild(piece);
-        checkCompletion()
+        checkCompletion2()
         
     } 
     
