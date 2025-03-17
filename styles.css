@@ -216,7 +216,7 @@ body {
 }
 
 /* Style for the autofill button */
-.autofill, .autofill-3 {
+.autofill, .autofill-2, .autofill-3 {
     background-color: #4CAF50; /* Green background for the autofill button */
     color: white; /* White text */
     font-size: 36px; /* Makes the text slightly bigger */
@@ -227,22 +227,6 @@ body {
     transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
-/* Hover effect for the autofill button */
-.autofill-2:hover {
-    background-color: #45a049; /* Darker green when hovered */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-}
-
-/* Focus effect for the autofill button */
-.autofill-2:focus {
-    outline: none; /* Removes the outline when focused */
-    border: 2px solid #45a049; /* Adds a green border when focused */
-}
-
-/* Active effect for the autofill button */
-.autofill-2:active {
-    background-color: #388e3c; /* Even darker green when clicked */
-}
 
 
 
@@ -301,28 +285,21 @@ body {
 
 
 /*puzzle*/
+/*puzzle*/
 
-
-.puzzle-container, .puzzle-container-3 {
+.puzzle-container, .puzzle-container-2, .puzzle-container-3 {
     display: flex;
-
-    
-
 }
 
-
-
-#grid, #grid-3 {
+#grid, #grid-2, #grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 500px);
     grid-template-rows: repeat(2, 500px);
-    border: 2px solid #000;
+    /*border: 2px solid #000;*/
     padding: 10px;
-    
-
 }
 
-.drop-zone, .drop-zone-3 {
+.drop-zone, .drop-zone-2, .drop-zone-3 {
     width: 500px;
     height: 500px;
     background-color: lightgray;
@@ -330,16 +307,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
-.pieces, .pieces-3 {
+.pieces, .pieces-2, .pieces-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     grid-template-rows: repeat(2, 1fr); /* 2 rows */
     gap: 5px; /* Adjust spacing between pieces */
     margin-top: 282px;
-
 }
 
 .puzzle-piece {
@@ -349,70 +324,48 @@ body {
     transition: transform 0.2s ease-in-out;
 }
 
-
-
-
-.puzzles, .puzzles-3 {
+.puzzles, .puzzles-2, .puzzles-3 {
     display: flex;
     margin-bottom: 200px;
-
 }
 
-
-
-
-
-
-
-
-
-.puzzle-container p, .puzzle-container-3 p {
+.puzzle-container p, .puzzle-container-2 p, .puzzle-container-3 p {
     font-size: 100px;
-
 }
 
-
-.puzzle-container, .puzzle-container-3 {
+.puzzle-container, .puzzle-container-2, .puzzle-container-3 {
     display: flex;
     flex-direction: column; /* Stack puzzle grid & pieces */
     align-items: center; /* Align to the left */
     text-align: center; /* Centers the text inside the <p> */
-
     padding-right: 200px;
-    
 }
 
 .intro-two {
     font-size: 100px;
     margin-top: 100px;
     margin-bottom: 170px;
-
 }
-
 
 /*
 .spare-zone {
-
  position: absolute
 }
 */
 
-.spare-auto, .spare-auto-3  {
+.spare-auto, .spare-auto-2, .spare-auto-3  {
     display: flex;
     flex-direction: column;
 }
 
-.who-auto, .who-auto-3 {
+.who-auto, .who-auto-2, .who-auto-3 {
     display: flex;
     flex-direction: row;
-
 }
 
-.autofill, .autofill-3 {
+.autofill, .autofill-2, .autofill-3 {
     transform: translateY(-80px); /* Moves the button 10px upwards */
     margin-left: 50px;
-
-   
 }
 
 
@@ -693,3 +646,7 @@ iframe {
 
 
 /*theme*/
+
+
+
+

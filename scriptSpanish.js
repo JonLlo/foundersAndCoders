@@ -6,7 +6,6 @@ function switchToSpanish() {
 
     // Change various texts to Spanish
     document.querySelector(".intro-two p").textContent = "¡Resuelve los acertijos a continuación para encontrar información sobre mí!";
-    document.querySelector(".intro-two p:nth-of-type(2)").textContent = "¡Arrastra las piezas de la derecha a la cuadrícula de la izquierda!";
     document.querySelector(".who-auto p").textContent = "¿QUIÉN SOY?";
     document.getElementById("autofill").textContent = "Haz clic para hacer trampa";
 
