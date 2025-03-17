@@ -37,45 +37,6 @@ themeChange.addEventListener('click', () => {
 
 
 
-document.getElementById("change-to-spanish").addEventListener("click", function () {
-    // Change button text to "Cambiar a inglés"
-    this.textContent = "Cambiar a inglés"; 
-
-    // Change various texts to Spanish
-    document.querySelector(".intro-two p").textContent = "¡Resuelve los acertijos a continuación para encontrar información sobre mí!";
-    document.querySelector(".intro-two p:nth-of-type(2)").textContent = "¡Arrastra las piezas de la derecha a la cuadrícula de la izquierda!";
-    document.querySelector(".who-auto p").textContent = "¿QUIÉN SOY?";
-    document.getElementById("autofill").textContent = "Haz clic para hacer trampa";
-
-    // Change timeline headings to Spanish
-    document.querySelectorAll(".timeline__title")[0].textContent = "Nací";
-    document.querySelectorAll(".timeline__title")[1].textContent = "Escuela";
-    document.querySelectorAll(".timeline__title")[2].textContent = "Año sabático";
-    document.querySelectorAll(".timeline__title")[3].textContent = "Universidad";
-    document.querySelectorAll(".timeline__title")[4].textContent = "Terminé la universidad";
-    document.querySelectorAll(".timeline__title")[5].textContent = "Marketing digital y eventos";
-    document.querySelectorAll(".timeline__title")[6].textContent = "Cambio de carrera";
-    document.querySelectorAll(".timeline__title")[7].textContent = "El futuro...";
-
-    // Change puzzle pieces to their Spanish equivalents by updating the `src` attribute
-    const puzzlePieces = document.querySelectorAll('.puzzle-piece');
-    puzzlePieces.forEach(piece => {
-        const pieceId = piece.id; // Get the ID of the current piece
-        const spanishSrc = piece.src.replace('english', 'spanish'); // Replace 'english' with 'spanish' in the src
-        
-        // Update the src to point to the Spanish version
-        piece.src = spanishSrc;
-    });
-
-
-
-    // Add logic to toggle back to English
-    this.addEventListener("click", function () {
-        location.reload(); // Reloads the page to reset to English
-    });
-});
-
-
 
 
 
