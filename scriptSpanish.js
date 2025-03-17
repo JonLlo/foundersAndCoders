@@ -66,12 +66,7 @@ function switchToEnglish() {
 
 // Set the language based on the stored state in localStorage when the page is loaded
 window.addEventListener('load', () => {
-    const language = localStorage.getItem("language");
-    if (language === "spanish") {
-        switchToSpanish(); // Switch to Spanish on page load
-    } else {
-        switchToEnglish(); // Default to English if no language is set
-    }
+
 
     // Add click listener to toggle language
     document.getElementById("change-to-spanish").addEventListener("click", function () {
