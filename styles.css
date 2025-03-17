@@ -216,7 +216,7 @@ body {
 }
 
 /* Style for the autofill button */
-.autofill, .autofill-2, .autofill-3 {
+.autofill, .autofill-2, .autofill-3, .autofill-4 {
     background-color: #4CAF50; /* Green background for the autofill button */
     color: white; /* White text */
     font-size: 36px; /* Makes the text slightly bigger */
@@ -285,13 +285,11 @@ body {
 
 
 /*puzzle*/
-/*puzzle*/
-
-.puzzle-container, .puzzle-container-2, .puzzle-container-3 {
+.puzzle-container, .puzzle-container-2, .puzzle-container-3, .puzzle-container-4 {
     display: flex;
 }
 
-#grid, #grid-2, #grid-3 {
+#grid, #grid-2, #grid-3, #grid-4 {
     display: grid;
     grid-template-columns: repeat(3, 500px);
     grid-template-rows: repeat(2, 500px);
@@ -299,7 +297,7 @@ body {
     padding: 10px;
 }
 
-.drop-zone, .drop-zone-2, .drop-zone-3 {
+.drop-zone, .drop-zone-2, .drop-zone-3, .drop-zone-4 {
     width: 500px;
     height: 500px;
     background-color: lightgray;
@@ -309,7 +307,7 @@ body {
     align-items: center;
 }
 
-.pieces, .pieces-2, .pieces-3 {
+.pieces, .pieces-2, .pieces-3, .pieces-4 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     grid-template-rows: repeat(2, 1fr); /* 2 rows */
@@ -317,23 +315,23 @@ body {
     margin-top: 282px;
 }
 
-.puzzle-piece {
+.puzzle-piece, .puzzle-piece-4 {
     width: 500px;
     height: 500px;
     cursor: grab;
     transition: transform 0.2s ease-in-out;
 }
 
-.puzzles, .puzzles-2, .puzzles-3 {
+.puzzles, .puzzles-2, .puzzles-3, .puzzles-4 {
     display: flex;
     margin-bottom: 200px;
 }
 
-.puzzle-container p, .puzzle-container-2 p, .puzzle-container-3 p {
+.puzzle-container p, .puzzle-container-2 p, .puzzle-container-3 p, .puzzle-container-4 p {
     font-size: 100px;
 }
 
-.puzzle-container, .puzzle-container-2, .puzzle-container-3 {
+.puzzle-container, .puzzle-container-2, .puzzle-container-3, .puzzle-container-4 {
     display: flex;
     flex-direction: column; /* Stack puzzle grid & pieces */
     align-items: center; /* Align to the left */
@@ -353,17 +351,17 @@ body {
 }
 */
 
-.spare-auto, .spare-auto-2, .spare-auto-3  {
+.spare-auto, .spare-auto-2, .spare-auto-3, .spare-auto-4 {
     display: flex;
     flex-direction: column;
 }
 
-.who-auto, .who-auto-2, .who-auto-3 {
+.who-auto, .who-auto-2, .who-auto-3, .who-auto-4 {
     display: flex;
     flex-direction: row;
 }
 
-.autofill, .autofill-2, .autofill-3 {
+.autofill, .autofill-2, .autofill-3, .autofill-4 {
     transform: translateY(-80px); /* Moves the button 10px upwards */
     margin-left: 50px;
 }
