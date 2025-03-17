@@ -75,7 +75,6 @@ document.getElementById("change-to-spanish").addEventListener("click", function 
 
 const pieces = document.querySelectorAll('.puzzle-piece');
 const dropZones = document.querySelectorAll('.drop-zone');
-const checkButton = document.getElementById('check-button');
 const spareZone = document.getElementById('spare-zone'); 
 const autoFill = document.getElementById('autofill'); 
 

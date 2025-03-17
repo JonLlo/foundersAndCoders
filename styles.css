@@ -216,7 +216,7 @@ body {
 }
 
 /* Style for the autofill button */
-.autofill {
+.autofill, .autofill-2 {
     background-color: #4CAF50; /* Green background for the autofill button */
     color: white; /* White text */
     font-size: 36px; /* Makes the text slightly bigger */
@@ -228,19 +228,19 @@ body {
 }
 
 /* Hover effect for the autofill button */
-.autofill:hover {
+.autofill-2:hover {
     background-color: #45a049; /* Darker green when hovered */
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 /* Focus effect for the autofill button */
-.autofill:focus {
+.autofill-2:focus {
     outline: none; /* Removes the outline when focused */
     border: 2px solid #45a049; /* Adds a green border when focused */
 }
 
 /* Active effect for the autofill button */
-.autofill:active {
+.autofill-2:active {
     background-color: #388e3c; /* Even darker green when clicked */
 }
 
@@ -303,7 +303,7 @@ body {
 /*puzzle*/
 
 
-.puzzle-container {
+.puzzle-container, .puzzle-container-2 {
     display: flex;
 
     
@@ -312,7 +312,7 @@ body {
 
 
 
-#grid {
+#grid, #grid-2 {
     display: grid;
     grid-template-columns: repeat(3, 500px);
     grid-template-rows: repeat(2, 500px);
@@ -322,7 +322,7 @@ body {
 
 }
 
-.drop-zone {
+.drop-zone, .drop-zone-2 {
     width: 500px;
     height: 500px;
     background-color: lightgray;
@@ -333,7 +333,7 @@ body {
     
 }
 
-.pieces {
+.pieces, .pieces-2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     grid-template-rows: repeat(2, 1fr); /* 2 rows */
@@ -352,7 +352,7 @@ body {
 
 
 
-.puzzles {
+.puzzles, .puzzles-2 {
     display: flex;
     margin-bottom: 200px;
 
@@ -366,13 +366,13 @@ body {
 
 
 
-.puzzle-container p {
+.puzzle-container p, .puzzle-container-2 p {
     font-size: 100px;
 
 }
 
 
-.puzzle-container {
+.puzzle-container, .puzzle-container-2 {
     display: flex;
     flex-direction: column; /* Stack puzzle grid & pieces */
     align-items: center; /* Align to the left */
@@ -397,23 +397,31 @@ body {
 }
 */
 
-.spare-auto {
+.spare-auto, .spare-auto-2  {
     display: flex;
     flex-direction: column;
 }
 
-.who-auto {
+.who-auto, .who-auto-2 {
     display: flex;
     flex-direction: row;
 
 }
 
-.autofill {
+.autofill, .autofill-2 {
     transform: translateY(-80px); /* Moves the button 10px upwards */
     margin-left: 50px;
 
    
 }
+
+
+/*PUZZLES2*/
+
+
+
+
+
 
 
 /*Timeline*/
