@@ -207,11 +207,7 @@ body {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
-/* Focus effect for the button inside button-section */
-.button-section button:focus {
-    outline: none; /* Removes the outline when focused */
-    border: 2px solid #45a049; /* Adds a green border when focused */
-}
+
 
 /* Active effect for the button inside button-section */
 .button-section button:active {

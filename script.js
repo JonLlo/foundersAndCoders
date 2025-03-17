@@ -164,6 +164,18 @@ function autoFillGrid() {
 
 
 
+
+const buttonDis = document.getElementById('dissertation');
+
+buttonDis.addEventListener('click', function() {
+    // Open the dissertation PDF in a new tab
+    window.open('dissertaion', '_blank');
+});
+
+
+
+
+
 // Get references to the button and the hidden content
 const button = document.getElementById('revealButton');
 const hiddenContent = document.getElementById('hiddenContent');
