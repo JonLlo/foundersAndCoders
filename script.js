@@ -136,12 +136,6 @@ function autoFillGrid() {
 
 
 
-const buttonDis = document.getElementById('dissertation');
-
-buttonDis.addEventListener('click', function() {
-    // Open the dissertation PDF in a new tab
-    window.open('dissertaion', '_blank');
-});
 
 
 
@@ -216,3 +210,6 @@ const fastForwardButton = document.getElementById('fast-forward-button');
         }
     });
 
+
+
+ 

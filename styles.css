@@ -472,6 +472,7 @@ body {
     display: flex;              /* Set the container to use Flexbox */
     justify-content: center;    /* Horizontally center the button */
     width: 100%;                /* Ensure the container takes up the full width */
+    flex-direction: column;
 }
 .reveal-button {
     background-color: #4CAF50; /* Green background */
@@ -487,6 +488,15 @@ body {
     transition: background-color 0.3s ease; /* Smooth color transition */
     
 }
+
+#dissertation {
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+
+
+
 
 .reveal-button:hover {
     background-color: #45a049; /* Darker green on hover */
@@ -644,6 +654,8 @@ iframe {
 
 
 /*theme*/
+
+
 
 
 
