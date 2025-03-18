@@ -136,6 +136,14 @@ function autoFillGrid() {
 
 
 
+const buttonDis = document.getElementById('dissertation');
+
+buttonDis.addEventListener('click', function() {
+    // Open the dissertation PDF in a new tab
+    window.open('files/jondis.pdf', '_blank');
+});
+
+
 
 
 
@@ -150,10 +158,21 @@ button.addEventListener('click', function() {
     // Toggle the display of hidden content
     if (hiddenContent.style.display === 'block') {
         hiddenContent.style.display = 'none'; // Hide it
-        button.innerText = 'Click here to reveal my favourite Maths Theorem'; // Change button text back
+
+        if (!isSpanish) {
+            button.innerText = 'Click here to reveal my favourite Maths Theorem'; // Change button text to 'Hide Theorem'
+            }
+            if (isSpanish) {
+                button.innerText = 'Haga clic aquí para descubrir mi teorema de matemáticas favorito'; // Change button text to 'Hide Theorem'
+                }
     } else {
         hiddenContent.style.display = 'block'; // Show it
+        if (!isSpanish) {
         button.innerText = 'Hide Theorem'; // Change button text to 'Hide Theorem'
+        }
+        if (isSpanish) {
+            button.innerText = 'Teorema de Hide'; // Change button text to 'Hide Theorem'
+            }
     }
 });
 
@@ -169,10 +188,21 @@ buttonDJ.addEventListener('click', function() {
     // Toggle the display of hidden content
     if (hiddenContentDJ.style.display === 'block') {
         hiddenContentDJ.style.display = 'none'; // Hide it
-        buttonDJ.innerText = 'Click here to reveal one of my favourite songs that I liked to play at the bars at the time!'; // Change button text back
+
+        if (!isSpanish) {
+            buttonDJ.innerText = 'Click here to reveal one of my favourite songs that I liked to play at the bars at the time!'; // Change button text to 'Hide Theorem'
+            }
+            if (isSpanish) {
+                buttonDJ.innerText = '¡Haga clic aquí para descubrir una de mis canciones favoritas que me gustaba tocar en los bares en esa época!'; // Change button text to 'Hide Theorem'
+                }
     } else {
         hiddenContentDJ.style.display = 'block'; // Show it
-        buttonDJ.innerText = 'Hide Song'; // Change button text to 'Hide Theorem'
+        if (!isSpanish) {
+            buttonDJ.innerText = 'Hide Song'; // Change button text to 'Hide Theorem'
+            }
+            if (isSpanish) {
+                buttonDJ.innerText = '¡Ocultar canción'; // Change button text to 'Hide Theorem'
+                }
     }
 });
 

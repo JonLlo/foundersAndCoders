@@ -1,5 +1,11 @@
+
 // Function to switch the page to Spanish
 function switchToSpanish() {
+    hiddenContentDJ.style.display = 'none';
+    hiddenContent.style.display = 'none';
+
+    isSpanish = true;
+
     // Change button text to "Cambiar a inglés"
     const button = document.getElementById("change-to-spanish");
     button.textContent = "Switch To English"; 
@@ -27,6 +33,10 @@ function switchToSpanish() {
 
 // Function to switch the page back to English
 function switchToEnglish() {
+    hiddenContentDJ.style.display = 'none';
+    hiddenContent.style.display = 'none';
+    isSpanish = false;
+
     // Change button text to "Cambiar a español"
     const button = document.getElementById("change-to-spanish");
     button.textContent = "Switch to Spanish";
