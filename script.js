@@ -1,6 +1,6 @@
 const themeChange = document.getElementById('theme-change');
 const themes = ['lightblue', 'lightyellow', 'darkred']; // Background colors
-const buttonThemes = ['blue', '#FFA500', 'darkblue']; // Button colors (green, orange, dark red)
+const buttonThemes = ['#025a5a', '#FFA500', '#581845']; // Button colors (green, orange, dark red)
 let currentTheme = 0; // Track the current theme
 
 // Find and mark originally white text
@@ -21,17 +21,32 @@ themeChange.addEventListener('click', () => {
     });
 
     // Change all buttons (including the theme change button itself)
+    // Change all buttons (including the theme change button itself)
     document.querySelectorAll('button').forEach(button => {
         button.style.backgroundColor = buttonThemes[currentTheme];
+
+
     });
 
     // Update originally white text: Black on yellow, White otherwise
     document.querySelectorAll('.original-white').forEach(el => {
-        el.style.color = (currentTheme === 1) ? 'black' : 'white';
-    });
+        if (currentTheme === 1) {
+            el.style.color = 'black'; // For lightblue background
+        } else {
+            el.style.color = 'white'; // For other backgrounds (lightyellow and darkred)
+        }});
+
+        document.querySelectorAll('.nameJon').forEach(el => {
+            if (currentTheme === 2) {
+                el.style.color = 'white'; // For lightblue background
+            } else {
+                el.style.color = 'black'; // For other backgrounds (lightyellow and darkred)
+            }});
+
+
+
 
     // Adjust body text color for readability
-    document.body.style.color = currentTheme === 2 ? 'white' : 'black'; // White on dark red, black otherwise
 });
 
 

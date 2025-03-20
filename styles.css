@@ -178,7 +178,7 @@ body {
 
 /* Style for buttons inside the button-section container */
 .button-section button {
-    background-color: blue; /* Green background for the button */
+    background-color: #025a5a;    /* Green background for the button */
     color: white; /* White text */
     font-size: 9px; /* Makes the text slightly bigger */
     padding: 25.5px 5px; /* Padding inside the button for a larger clickable area */
@@ -198,13 +198,13 @@ body {
 
 /* Active effect for the button inside button-section */
 .button-section button:active {
-    background-color: blue; /* Even darker green when clicked */
+    background-color: #025a5a;; /* Even darker green when clicked */
     transform: translateY(0.25px); /* Small inward movement when clicked */
 }
 
 /* Style for the autofill button */
 .autofill, .autofill-2, .autofill-3, .autofill-4 {
-    background-color: blue; /* Green background for the autofill button */
+    background-color: #025a5a;; /* Green background for the autofill button */
     color: white; /* White text */
     font-size: 9px; /* Makes the text slightly bigger */
     padding: 25.5px 5px; /* Padding inside the button for a larger clickable area */
@@ -462,7 +462,7 @@ body {
 }
 
 .reveal-button {
-    background-color: blue; /* Green background */
+    background-color: #025a5a;; /* Green background */
     color: white; /* White text */
     font-size: 12px; /* Reduced font size */
     padding: 3.75px 8px; /* Reduced padding */
