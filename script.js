@@ -1,6 +1,6 @@
 const themeChange = document.getElementById('theme-change');
-const themes = ['lightblue', 'lightyellow', 'darkred']; // Background colors
-const buttonThemes = ['#025a5a', '#FFA500', '#581845']; // Button colors (green, orange, dark red)
+const themes = ['lightblue', 'lightyellow', '#3f3f3f']; // Background colors
+const buttonThemes = ['#025a5a', '#FFA500', '#121212']; // Button colors (green, orange, dark red)
 let currentTheme = 0; // Track the current theme
 
 // Find and mark originally white text
@@ -255,6 +255,18 @@ const fastForwardButton = document.getElementById('fast-forward-button');
         }
     });
 
+// Get the elements
+const me = document.getElementById('me');
+const speechBubble = document.getElementById('speech-bubble');
 
+// Show the speech bubble when mouse enters
+me.addEventListener('mouseenter', () => {
+    speechBubble.style.display = 'block';  // Make the speech bubble visible
+    speechBubble.style.opacity = '1';      // Set opacity to 1 (make it visible)
+});
 
- 
+// Hide the speech bubble when mouse leaves
+me.addEventListener('mouseleave', () => {
+    speechBubble.style.display = 'none';   // Hide the speech bubble
+    speechBubble.style.opacity = '0';      // Set opacity back to 0 (invisible)
+});

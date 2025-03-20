@@ -13,7 +13,7 @@ body {
 
 
 }
-@media (max-width: 600px) {
+@media (max-width: 586px) {
     .container {
       width: 1%; /* Take up full width on small screens */
     }
@@ -87,7 +87,6 @@ body {
 /* Scroll Container */
 .scroll {
     width: 100%;
-    min-width: 725px; 
     background-color:lightblue;
     padding: 12.5px;
     margin-top: 50px;
@@ -118,6 +117,25 @@ body {
     margin-left: 20px;
     margin-top: 7.5px;
     margin-right: 15px;
+    position: relative;
+}
+#speech-bubble {
+    position: absolute;  /* Absolute positioning */
+    display: none;       /* Initially hidden */
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 1000;       /* Ensure it appears above other elements */
+    opacity: 0;         
+    transition: opacity 0.3s ease;
+    top: -40px;         
+    left: 50%;          
+    transform: translateY(500%); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 /* Text container */
@@ -269,6 +287,10 @@ body {
     margin-bottom: 3.75px;
 }
 
+#theme-change {
+    margin-bottom: 10px;
+}
+
 .button img {
     width: 100%;
     height: 17.5%; /* Reduced image size */
@@ -289,6 +311,8 @@ body {
     grid-template-rows: repeat(2, 125px); /* Reduced row size */
     /*border: 2px solid #000;*/
     padding: 2.5px; /* Reduced padding */
+    margin-right: 10px;
+
 }
 
 .drop-zone, .drop-zone-2, .drop-zone-3, .drop-zone-4 {
@@ -307,6 +331,7 @@ body {
     grid-template-rows: repeat(2, 1fr); /* 2 rows */
     gap: 1.25px; /* Reduced gap between pieces */
     margin-top: 100.5px; /* Reduced margin */
+    margin-left: 10px;
 }
 
 .puzzle-piece, .puzzle-piece-4 {
@@ -318,7 +343,7 @@ body {
 
 .puzzles, .puzzles-2, .puzzles-3, .puzzles-4 {
     display: flex;
-    margin-bottom: 50px; /* Reduced margin-bottom */
+    margin-bottom: 100px; /* Reduced margin-bottom */
 }
 
 .puzzle-container p, .puzzle-container-2 p, .puzzle-container-3 p, .puzzle-container-4 p {
@@ -330,13 +355,81 @@ body {
     flex-direction: column; /* Stack puzzle grid & pieces */
     align-items: center; /* Align to the left */
     text-align: center; /* Centers the text inside the <p> */
-    padding-right: 50px; /* Reduced padding-right */
 }
+
+
+@media screen and (max-width: 730px) {
+    .puzzles, .puzzles-2, .puzzles-3, .puzzles-4 {
+        flex-direction: column; /* Stack the puzzle container vertically */
+        align-items: center; /* Center items */
+    }
+
+    .pieces, .pieces-2, .pieces-3, .pieces-4 {
+        margin-top: 10px;
+        margin-left: 0px;
+
+      
+    }
+
+    .puzzle-piece, .puzzle-piece-2, .puzzle-piece-3, .puzzle-piece-4 {
+        width: 130px;
+        height: 130px;
+
+    }
+    .drop-zone, .drop-zone-2, .drop-zone-3, .drop-zone-4 {
+        width: 130px;
+        height: 130px;
+
+    }
+
+    #grid, #grid-2, #grid-3, #grid-4 {
+
+        grid-template-columns: repeat(3, 130px); /* Reduced column size */
+        grid-template-rows: repeat(2, 130px); /* Reduced row size */
+        padding: 2.5px; /* Reduced padding */
+        margin-right: 0px;
+    }
+
+    .intro-two {
+        width: 80vw;
+        margin-bottom: 20px;
+    }
+
+
+
+    #me {
+        width: 150px; /* Set the width of the image */
+        height: 150px; 
+        
+    }
+
+    .section-one h1 {
+        font-size: 45px;;
+
+    }
+
+
+ 
+
+
+
+}
+
+
+
+
+
+
+
 
 .intro-two {
     font-size: 25px; /* Reduced font size */
     margin-top: 25px; /* Reduced margin-top */
     margin-bottom: 42.5px; /* Reduced margin-bottom */
+}
+
+.intro-two p {
+    text-align: center;
 }
 
 /*
@@ -353,6 +446,7 @@ body {
 .who-auto, .who-auto-2, .who-auto-3, .who-auto-4 {
     display: flex;
     flex-direction: row;
+
 }
 
 .autofill, .autofill-2, .autofill-3, .autofill-4 {
@@ -640,9 +734,4 @@ iframe {
 
 
 /*theme*/
-
-
-
-
-
 
