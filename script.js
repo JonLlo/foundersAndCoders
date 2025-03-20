@@ -1,6 +1,6 @@
 const themeChange = document.getElementById('theme-change');
 const themes = ['lightblue', 'lightyellow', 'darkred']; // Background colors
-const buttonThemes = ['#4CAF50', '#FFA500', 'darkblue']; // Button colors (green, orange, dark red)
+const buttonThemes = ['blue', '#FFA500', 'darkblue']; // Button colors (green, orange, dark red)
 let currentTheme = 0; // Track the current theme
 
 // Find and mark originally white text

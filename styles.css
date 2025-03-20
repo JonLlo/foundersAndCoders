@@ -20,17 +20,17 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 15px 20px;
+    padding: 3.75px 5px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
-    height: 250px;
+    height: 62.5px;
 }
 
 .navbar .tagline {
-    font-size: 80px;
+    font-size: 20px;
     font-style: italic;
     font-family: circular;
     color: white;
@@ -43,19 +43,19 @@ body {
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 3.75px;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    padding: 8px 12px;
+    padding: 2px 3px;
     transition: 0.3s;
 }
 
 .nav-links a:hover {
     background-color: #444;
-    border-radius: 4px;
+    border-radius: 1px;
 }
 
 
@@ -77,10 +77,10 @@ body {
 /* Scroll Container */
 .scroll {
     width: 100%;
-    min-width: 2900px; 
+    min-width: 725px; 
     background-color:lightblue;
-    padding: 50px;
-    margin-top: 200px;
+    padding: 12.5px;
+    margin-top: 50px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -95,134 +95,116 @@ body {
     display: flex; /* Use flexbox to arrange the items side by side */
     align-items: flex-start; /* Vertically center the image and text */
     justify-content: space-between; /* Space out the image and text box */
-    padding: 50px; /* Optional: adds padding around the section */
+    padding: 12.5px; /* Optional: adds padding around the section */
 }
 
 /* Image */
 #me {
-    width: 800px; /* Set the width of the image */
-    height: 800px; /* Set the height of the image */
-    border-radius: 50%; /* Makes the image round */
+    width: 200px; /* Set the width of the image */
+    height: 200px; /* Set the height of the image */
+    border-radius: 12.5%; /* Makes the image round */
     cursor: pointer; /* Makes the image clickable */
-    margin-left: 80px;
-    margin-top: 30px;
-    margin-right: 60px;
+    margin-left: 20px;
+    margin-top: 7.5px;
+    margin-right: 15px;
 }
 
 /* Text container */
 .text-box-name {
     font-family: 'circular'; /* Use a clean, modern font */
     color: black; /* Darker color for the text for better readability */
-    padding: 30px; /* Adds more padding for a spacious feel */
-    border-radius: 10px; /* Rounded corners for the text box */
+    padding: 7.5px; /* Adds more padding for a spacious feel */
+    border-radius: 2.5px; /* Rounded corners for the text box */
     width: 50%; /* Controls the width of the text box */
-    margin-right: 200px;
+    margin-right: 50px;
     display: flex;
     flex-direction: column; /* Arrange the content vertically */
     justify-content: center; /* Vertically center the content */
     align-items: center; /* Horizontally center the content */
     text-align: center; /* Ensure text is centered within the container */
-    margin-top: 50px;
-   
+    margin-top: 12.5px;
 }
 
 /* Heading */
 .text-box-name h1 {
-    font-size: 15.5rem; /* Size of the header */
+    font-size: 3.875rem; /* Size of the header */
     font-weight: 600; /* Makes the header text a bit bolder */
     color: black; /* Darker color for the header */
-    margin-bottom: 20px; /* Adds space below the header */
+    margin-bottom: 5px; /* Adds space below the header */
 }
+
 .text-box-name p {
-    font-size: 15.5rem; /* Size of the header */
-
-
+    font-size: 3.875rem; /* Size of the paragraph */
 }
 
 
+/*141*/
 
-.section-one {
-    display: flex; /* Use flexbox to arrange the items side by side */
-    align-items: flex-start; /* Vertically center the image and text */
-    justify-content: space-between; /* Space out the image and text box */
-    padding: 50px; /* Optional: adds padding around the section */
-}
+
 
 .section-two {
     justify-content: center;
     display: flex;
     flex-direction: column; /* Arrange the content vertically */
-
-
-
 }
 
 .text-box-2 {
     font-family: 'circular'; /* Use a clean, modern font */
-    padding: 30px; /* Adds more padding for a spacious feel */
-    border-radius: 10px; /* Rounded corners for the text box */
+    padding: 7.5px; /* Adds more padding for a spacious feel */
+    border-radius: 2.5px; /* Rounded corners for the text box */
     width: 100%; /* Controls the width of the text box */
     display: flex;
     flex-direction: column; /* Arrange the content vertically */
     justify-content: center; /* Vertically center the content */
     align-items: center; /* Horizontally center the content */
     text-align: center; /* Ensure text is centered within the container */
-  
-   
 }
 
 .text-box-2 h1 {
-    font-size: 200px;
-
-
+    font-size: 50px;
 }
 
 .text-box-2 p { 
     align-self: left;
-    font-size: 50px; /* Size of the header */
-
-    
+    font-size: 12.5px; /* Size of the header */
 }
 
 
-/*button section*/
 
 /* Style for buttons inside the button-section container */
 .button-section button {
-    background-color: #4CAF50; /* Green background for the button */
+    background-color: blue; /* Green background for the button */
     color: white; /* White text */
-    font-size: 36px; /* Makes the text slightly bigger */
-    padding: 102px 20px; /* Padding inside the button for a larger clickable area */
+    font-size: 9px; /* Makes the text slightly bigger */
+    padding: 25.5px 5px; /* Padding inside the button for a larger clickable area */
     border: none; /* No border */
-    border-radius: 8px; /* Rounded corners */
-    width: 250px; /* Consistent width for all buttons */
+    border-radius: 2px; /* Rounded corners */
+    width: 62.5px; /* Consistent width for all buttons */
     cursor: pointer; /* Pointer cursor to indicate interactivity */
     transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
 /* Hover effect for the button inside button-section */
 .button-section button:hover {
-    background-color: #45a049; /* Darker green when hovered */
-    transform: translateY(-2px); /* Slight upward movement on hover */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    background-color: darkblue; /* Darker green when hovered */
+    transform: translateY(-0.5px); /* Slight upward movement on hover */
+    box-shadow: 0px 1.5px 3px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
-
-
 
 /* Active effect for the button inside button-section */
 .button-section button:active {
-    background-color: #388e3c; /* Even darker green when clicked */
-    transform: translateY(1px); /* Small inward movement when clicked */
+    background-color: blue; /* Even darker green when clicked */
+    transform: translateY(0.25px); /* Small inward movement when clicked */
 }
 
 /* Style for the autofill button */
 .autofill, .autofill-2, .autofill-3, .autofill-4 {
-    background-color: #4CAF50; /* Green background for the autofill button */
+    background-color: blue; /* Green background for the autofill button */
     color: white; /* White text */
-    font-size: 36px; /* Makes the text slightly bigger */
-    padding: 102px 20px; /* Padding inside the button for a larger clickable area */
+    font-size: 9px; /* Makes the text slightly bigger */
+    padding: 25.5px 5px; /* Padding inside the button for a larger clickable area */
     border: none; /* No border */
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 2px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor to indicate interactivity */
     transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
@@ -232,55 +214,56 @@ body {
 
 /* BANNER */
 /* Button Section of banner*/
+/* BANNER */
+/* Button Section of banner*/
 /* Button Section */
 .button-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
     grid-template-rows: repeat(2, auto); /* 2 rows */
-    gap: 40px; /* More space between buttons */
+    gap: 10px; /* More space between buttons */
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 12.5px;
 }
 
 .button {
-    width: 900px; /* Increased width */
-    height: 1000px; /* Increased height */
+    width: 225px; /* Reduced width */
+    height: 250px; /* Reduced height */
     background: rgba(255, 255, 255, 0.2); /* Semi-transparent */
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    backdrop-filter: blur(2.5px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 30px;
-    margin: 50px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+    padding: 7.5px;
+    margin: 12.5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
 .button:hover {
     transform: scale(1.1);
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 3.75px 7.5px rgba(0, 0, 0, 0.5);
 }
 
 .button span {
-    font-size: 28px; /* Bigger text */
+    font-size: 7px; /* Reduced text size */
     font-weight: bold;
     color: white;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-    margin-bottom: 15px;
+    text-shadow: 0.75px 0.75px 1.5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 3.75px;
 }
 
 .button img {
     width: 100%;
-    height: 70%; /* Bigger image */
+    height: 17.5%; /* Reduced image size */
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 3.75px;
 }
-
 
 
 
@@ -291,15 +274,15 @@ body {
 
 #grid, #grid-2, #grid-3, #grid-4 {
     display: grid;
-    grid-template-columns: repeat(3, 500px);
-    grid-template-rows: repeat(2, 500px);
+    grid-template-columns: repeat(3, 125px); /* Reduced column size */
+    grid-template-rows: repeat(2, 125px); /* Reduced row size */
     /*border: 2px solid #000;*/
-    padding: 10px;
+    padding: 2.5px; /* Reduced padding */
 }
 
 .drop-zone, .drop-zone-2, .drop-zone-3, .drop-zone-4 {
-    width: 500px;
-    height: 500px;
+    width: 125px; /* Reduced width */
+    height: 125px; /* Reduced height */
     background-color: lightgray;
     border: 1px dashed #000;
     display: flex;
@@ -311,24 +294,24 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     grid-template-rows: repeat(2, 1fr); /* 2 rows */
-    gap: 5px; /* Adjust spacing between pieces */
-    margin-top: 282px;
+    gap: 1.25px; /* Reduced gap between pieces */
+    margin-top: 100.5px; /* Reduced margin */
 }
 
 .puzzle-piece, .puzzle-piece-4 {
-    width: 500px;
-    height: 500px;
+    width: 125px; /* Reduced width */
+    height: 125px; /* Reduced height */
     cursor: grab;
     transition: transform 0.2s ease-in-out;
 }
 
 .puzzles, .puzzles-2, .puzzles-3, .puzzles-4 {
     display: flex;
-    margin-bottom: 200px;
+    margin-bottom: 50px; /* Reduced margin-bottom */
 }
 
 .puzzle-container p, .puzzle-container-2 p, .puzzle-container-3 p, .puzzle-container-4 p {
-    font-size: 100px;
+    font-size: 25px; /* Reduced font size */
 }
 
 .puzzle-container, .puzzle-container-2, .puzzle-container-3, .puzzle-container-4 {
@@ -336,13 +319,13 @@ body {
     flex-direction: column; /* Stack puzzle grid & pieces */
     align-items: center; /* Align to the left */
     text-align: center; /* Centers the text inside the <p> */
-    padding-right: 200px;
+    padding-right: 50px; /* Reduced padding-right */
 }
 
 .intro-two {
-    font-size: 100px;
-    margin-top: 100px;
-    margin-bottom: 170px;
+    font-size: 25px; /* Reduced font size */
+    margin-top: 25px; /* Reduced margin-top */
+    margin-bottom: 42.5px; /* Reduced margin-bottom */
 }
 
 /*
@@ -362,8 +345,8 @@ body {
 }
 
 .autofill, .autofill-2, .autofill-3, .autofill-4 {
-    transform: translateY(-80px); /* Moves the button 10px upwards */
-    margin-left: 50px;
+    transform: translateY(-20px); /* Moves the button 10px upwards */
+    margin-left: 12.5px;
 }
 
 
@@ -376,89 +359,87 @@ body {
 
 
 /*Timeline*/
+
+/*Timeline*/
 .timeline {
     margin: 0 auto;
-    padding: 25px;
+    padding: 6.25px; /* Reduced padding */
     display: grid;
-    width: 80vw;
-
-    grid-template-columns: 1fr 3px 1fr;
+    width: 80vw; /* Reduced width */
+    grid-template-columns: 1fr 0.75px 1fr; /* Reduced grid line width */
 }
 
-
-
 .timeline__component {
-    
-    margin-top: 20x;
-    margin: 0 20px 20px 20px;
+    margin-top: 5px; /* Reduced margin-top */
+    margin: 0 5px 5px 5px; /* Reduced margin */
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(5px); /* Reduced translateY */
     animation: fadeInUp linear both;
     animation-timeline: view();
     animation-range: entry 20% cover 50%;
-    
 }
-.timeline__component--bg {
-    padding: 1.5em;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin-bottom: 100px;
-    margin-top: 200px;
 
+.timeline__component--bg {
+    padding: 0.375em; /* Reduced padding */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 1.25px rgba(0, 0, 0, 0.2); /* Reduced box-shadow */
+    border-radius: 2.5px; /* Reduced border-radius */
+    margin-bottom: 25px; /* Reduced margin-bottom */
+    margin-top: 50px; /* Reduced margin-top */
 }
+
 .timeline__middle {
     position: relative;
     background: #ffffff;
 }
+
 .timeline__point {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 15px;
-    height: 15px;
+    width: 3.75px; /* Reduced width */
+    height: 3.75px; /* Reduced height */
     background: #ffffff;
     border-radius: 50%;
 }
+
 .timeline__point--bottom {
     top: initial;
     bottom: 0;
 }
+
 .timeline__date {
-    font-size: 15rem;
-    transform: translateY(400px); /* Adjust the value as needed */
-    padding-left: 200px;
- 
-
-
-
-
+    font-size: 3.75rem; /* Reduced font size */
+    transform: translateY(100px); /* Reduced translateY */
+    padding-left: 50px; /* Reduced padding-left */
 }
+
+
+
+
 .timeline__date--right {
     text-align: right;
-    font-size: 15rem;
-    padding-right: 200px;
-
+    font-size: 3.75rem; /* Reduced font size */
+    padding-right: 50px; /* Reduced padding-right */
 }
-
 
 .timeline__title {
     margin: 0;
-    font-size: 10.15em;
+    font-size: 2.5375em; /* Reduced font size */
     font-weight: bold;
 }
+
 .timeline__paragraph {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    font-size: 3.15em;
-
-
+    margin-top: 25px; /* Reduced margin-top */
+    margin-bottom: 25px; /* Reduced margin-bottom */
+    font-size: 0.7875em; /* Reduced font size */
 }
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(5px); /* Reduced translateY */
     }
     to {
         opacity: 1;
@@ -466,191 +447,185 @@ body {
     }
 }
 
-
 /* Center only the button in its container using Flexbox */
 .rev-button-container {
     display: flex;              /* Set the container to use Flexbox */
-    justify-content: center;    /* Horizontally center the button */
+    justify-content: center;  
+    align-items: center;  /* Horizontally center the button */
     width: 100%;                /* Ensure the container takes up the full width */
     flex-direction: column;
 }
+
 .reveal-button {
-    background-color: #4CAF50; /* Green background */
+    background-color: blue; /* Green background */
     color: white; /* White text */
-    font-size: 48px; /* Font size */
-    padding: 15px 32px; /* Padding around the text */
+    font-size: 12px; /* Reduced font size */
+    padding: 3.75px 8px; /* Reduced padding */
     text-align: center; /* Center text */
+    align-self: center;
     text-decoration: none; /* Remove underline */
     display: inline-block;
     border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 1.25px; /* Reduced border-radius */
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s ease; /* Smooth color transition */
-    
 }
 
 #dissertation {
-    margin-top: 20px;
-    margin-left: 25%;
+    margin-top: 5px; /* Reduced margin-top */
+
 }
-
-
-
-
 
 .reveal-button:hover {
-    background-color: #45a049; /* Darker green on hover */
-   
+    background-color: darkblue; /* Darker green on hover */
 }
-
 
 
 #hiddenContent iframe {
-    margin-top: 20px; /* Adds space above the video */
+    margin-top: 5px; /* Reduced margin-top */
 }
 
 iframe {
-    margin-left: 300px;
+   align-self: center;
 }
 
-/*DJ/*/
 
+
+
+
+
+
+
+
+/*DJ/*/
 .reveal-button-dj {
     background-color: #4CAF50; /* Green background */
     color: white; /* White text */
-    font-size: 48px; /* Font size */
-    padding: 15px 32px; /* Padding around the text */
+    font-size: 12px; /* Reduced font size */
+    padding: 3.75px 8px; /* Reduced padding */
     text-align: center; /* Center text */
     text-decoration: none; /* Remove underline */
     display: inline-block;
     border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 1.25px; /* Reduced border-radius */
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s ease; /* Smooth color transition */
-    
 }
 
 .reveal-button-dj:hover {
     background-color: #45a049; /* Darker green on hover */
-   
 }
-
-
 
 #hiddenContent-dj iframe {
-    margin-top: 20px; /* Adds space above the video */
+    margin-top: 5px; /* Reduced margin-top */
 }
-    /* Centering the audio container */
-    .audio-container {
-        display: flex;
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
-        margin-top: 20px;
-        flex-direction: column; /* Stack the button and audio vertically */
-    }
 
-    /* Large play button style */
-    .play-button {
-        font-size: 100px; /* Big play button */
-        padding: 20px 40px; /* Make it bigger */
-        border: none;
-        background-color: #4CAF50;
-        color: white;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
+/* Centering the audio container */
+.audio-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 5px; /* Reduced margin-top */
+    flex-direction: column; /* Stack the button and audio vertically */
+}
 
-    .play-button:hover {
-        background-color: #45a049; /* Darker green when hovering */
-    }
+/* Large play button style */
+.play-button {
+    font-size: 25px; /* Reduced font size */
+    padding: 5px 10px; /* Reduced padding */
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 12.5px; /* Reduced border-radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-        /* Fast Forward button style */
-        .fast-forward-button {
-            font-size: 100px; /* Big play button */
-            padding: 20px 40px; /* Make it bigger */
-            border: none;
-            background-color: #4CAF50;
-            color: white;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-    
-        .fast-forward-button:hover {
-            background-color: #45a049;
-        }
+.play-button:hover {
+    background-color: #45a049; /* Darker green when hovering */
+}
+
+/* Fast Forward button style */
+.fast-forward-button {
+    font-size: 25px; /* Reduced font size */
+    padding: 5px 10px; /* Reduced padding */
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 12.5px; /* Reduced border-radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fast-forward-button:hover {
+    background-color: #45a049;
+}
 
 
 
         /*Loonies*/
 
-
         .reveal-button-photo {
             background-color: #4CAF50; /* Green background */
             color: white; /* White text */
-            font-size: 48px; /* Font size */
-            padding: 15px 32px; /* Padding around the text */
+            font-size: 12px; /* Reduced font size */
+            padding: 3.75px 8px; /* Reduced padding */
             text-align: center; /* Center text */
             text-decoration: none; /* Remove underline */
             display: inline-block;
             border: none; /* Remove border */
-            border-radius: 5px; /* Rounded corners */
+            border-radius: 1.25px; /* Reduced border-radius */
             cursor: pointer; /* Pointer cursor on hover */
             transition: background-color 0.3s ease; /* Smooth color transition */
         }
-    
+        
         .reveal-button-photo:hover {
             background-color: #45a049;
         }
-
-
-
-
+        
         .projects img {
-            border-radius: 22px;
+            border-radius: 5.5px; /* Reduced border-radius */
         }
+        
+        /* Gaz */
+        .gaz {
+            display: flex; /* Use flexbox to position elements side by side */
+            justify-content: space-between; /* Space out the iframe and text */
+            align-items: center; /* Vertically align the iframe and text in the center */
+            width: 100%;
+            flex-direction: column;
+            text-align: left; /* Align text to the left */
+            margin: 0 auto;
+        }
+        
+        .iframe-container {
+            width: 750px; /* Reduced width */
+            height: 350px; /* Reduced height */
+        }
+        
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0.5px solid black; /* Reduced border width */
+            border-radius: 0.5px; /* Reduced border-radius */
+            margin-left: 0px; /*not sure why this helps but it does*/
+            zoom: 0.65; /* Reduced zoom */
+            transform-origin: 0 0; /* Scale from the top-left corner */
+        }
+        
+        .gaz p {
+            max-width: 50%; /* Limit the width of the text block */
+            font-size: 15px; /* Adjusted font size for readability */
+            margin-top: 50px; /* Reduced spacing between iframe and text */
+            font-style: italic;
+            text-align: center;
 
-
-           /*Gaz*/
-    /* Gaz */
-.gaz {
-    display: flex; /* Use flexbox to position elements side by side */
-    justify-content: space-between; /* Space out the iframe and text */
-    align-items: center; /* Vertically align the iframe and text in the center */
-    width: 100%;
-    flex-direction: column;
-    text-align: left; /* Align text to the left */
-    margin: 0 auto;
-}
-
-.iframe-container {
-    width: 3000px;
-    height: 1400px;
-  
-
-}
-
-.iframe-container iframe {
-    width: 100%;
-    height: 100%;
-    border: 2px solid black;
-    border-radius: 2px;
-    margin-left: 0px; /*not sure why this helps but it does*/
-    zoom: 2.6;
-    transform-origin: 0 0; /* Scale from the top-left corner */
-}
-
-.gaz p {
-    max-width: 50%; /* Limit the width of the text block */
-    font-size: 18px; /* Adjust font size for readability */
-    margin-top: 200px; /* Add spacing between iframe and text */
-
-}
-
-.next {
-    margin-top: 2000px;
-}
+        }
+        
+        .next {
+            margin-top: 500px; /* Reduced margin-top */
+        }
+        
 
 
 /*theme*/
