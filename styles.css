@@ -404,8 +404,11 @@ body {
     }
 
     .section-one h1 {
-        font-size: 45px;;
+        font-size: 50px;;
 
+    }
+    .button-section {
+        transform: translateX(-25px); /* Move the element 20px to the right */
     }
 
 
