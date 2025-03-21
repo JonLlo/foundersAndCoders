@@ -246,33 +246,27 @@ const fastForwardButton = document.getElementById('fast-forward-button');
 
     document.getElementById('revealButton-photo').addEventListener('click', function() {
         var hiddenPhoto = document.getElementById('hiddenContent-photo');
+        
         if (hiddenPhoto.style.display === 'block') {
             hiddenPhoto.style.display = 'none';
-            this.innerText = 'Click here to reveal The Loonies DVD cover...';
+            
+            // Toggle button text based on the isSpanish flag
+            if (!isSpanish) {
+                this.innerText = 'Click here to reveal The Loonies DVD cover...'; // English text
+            }
+            if (isSpanish) {
+                this.innerText = 'Haga clic aquí para revelar la portada de DVD de The Loonies...'; // Spanish text
+            }
         } else {
             hiddenPhoto.style.display = 'block';
-            this.innerText = 'Hide Photo';
-        }
-    });
-    buttonDJ.addEventListener('click', function() {
-        // Toggle the display of hidden content
-        if (hiddenContentDJ.style.display === 'block') {
-            hiddenContentDJ.style.display = 'none'; // Hide it
-    
+            
+            // Change button text when content is revealed
             if (!isSpanish) {
-                buttonDJ.innerText = 'Click here to reveal one of my favourite songs that I liked to play at the bars at the time!'; // Change button text to 'Hide Theorem'
-                }
-                if (isSpanish) {
-                    buttonDJ.innerText = '¡Haga clic aquí para descubrir una de mis canciones favoritas que me gustaba tocar en los bares en esa época!'; // Change button text to 'Hide Theorem'
-                    }
-        } else {
-            hiddenContentDJ.style.display = 'block'; // Show it
-            if (!isSpanish) {
-                buttonDJ.innerText = 'Hide Song'; // Change button text to 'Hide Theorem'
-                }
-                if (isSpanish) {
-                    buttonDJ.innerText = '¡Ocultar canción'; // Change button text to 'Hide Theorem'
-                    }
+                this.innerText = 'Hide Photo'; // English text
+            }
+            if (isSpanish) {
+                this.innerText = '¡Ocultar foto!'; // Spanish text
+            }
         }
     });
     
