@@ -254,6 +254,32 @@ const fastForwardButton = document.getElementById('fast-forward-button');
             this.innerText = 'Hide Photo';
         }
     });
+    buttonDJ.addEventListener('click', function() {
+        // Toggle the display of hidden content
+        if (hiddenContentDJ.style.display === 'block') {
+            hiddenContentDJ.style.display = 'none'; // Hide it
+    
+            if (!isSpanish) {
+                buttonDJ.innerText = 'Click here to reveal one of my favourite songs that I liked to play at the bars at the time!'; // Change button text to 'Hide Theorem'
+                }
+                if (isSpanish) {
+                    buttonDJ.innerText = '¡Haga clic aquí para descubrir una de mis canciones favoritas que me gustaba tocar en los bares en esa época!'; // Change button text to 'Hide Theorem'
+                    }
+        } else {
+            hiddenContentDJ.style.display = 'block'; // Show it
+            if (!isSpanish) {
+                buttonDJ.innerText = 'Hide Song'; // Change button text to 'Hide Theorem'
+                }
+                if (isSpanish) {
+                    buttonDJ.innerText = '¡Ocultar canción'; // Change button text to 'Hide Theorem'
+                    }
+        }
+    });
+    
+
+
+
+
 
 // Get the elements
 const me = document.getElementById('me');

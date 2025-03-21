@@ -8,6 +8,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: lightblue;
+    overflow-x: hidden;
+
 
 
 
@@ -114,9 +116,7 @@ body {
     height: 200px; /* Set the height of the image */
     border-radius: 12.5%; /* Makes the image round */
     cursor: pointer; /* Makes the image clickable */
-    margin-left: 20px;
     margin-top: 7.5px;
-    margin-right: 15px;
     position: relative;
 }
 #speech-bubble {
@@ -133,8 +133,11 @@ body {
     opacity: 0;         
     transition: opacity 0.3s ease;
     top: -40px;         
-    left: 50%;          
+    left: 50%;     
+     
     transform: translateY(500%); 
+
+
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
@@ -398,27 +401,75 @@ body {
 
 
     #me {
-        width: 150px; /* Set the width of the image */
-        height: 150px; 
+        width: 140px; /* Set the width of the image */
+        height: 140px;
+        margin-left: 25px; 
         
     }
 
     .section-one h1 {
         font-size: 50px;;
+        margin-left: 25px;
 
     }
     .button-section {
         transform: translateX(-25px); /* Move the element 20px to the right */
+        flex-direction: column;
+        display: flex;
     }
 
 
- 
+    .iframe-container {
+        width: 98%; /* Make the iframe container responsive */
+        height: auto; /* Let height adjust according to width */
+        max-width: 400px; /* Limit max width to avoid it getting too large */
+    }
 
+    .timeline {
+        width: 100vw !important;
+        transform: translateX(-15px);  /* Move the timeline 20px horizontally */
+    }
+
+    .gaz p {
+        min-width: 90%;
+        max-width: 90%; /* Limit the width of the text block */
+        font-size: 15px; /* Adjusted font size for readability */
+        margin-top: 50px; /* Reduced spacing between iframe and text */
+        font-style: italic;
+        text-align: center;
+
+    }
+  
+
+    
+    
+  
+
+  
+}
+
+@media screen and (max-width: 420px) {
+
+    #me {
+        width: 120px; /* Set the width of the image */
+        height: 120px;
+        margin-left: 25px; 
+        
+    }
+
+    .section-one h1 {
+        font-size: 40px;;
+        margin-left: 25px;
+
+    }
+    .button-section {
+        transform: translateX(-30px); /* Move the element 20px to the right */
+        flex-direction: column;
+        display: flex;
+    }
 
 
 }
-
-
 
 
 
@@ -473,8 +524,9 @@ body {
     margin: 0 auto;
     padding: 6.25px; /* Reduced padding */
     display: grid;
-    width: 80vw; /* Reduced width */
+    width: 70vw; /* Reduced width */
     grid-template-columns: 1fr 0.75px 1fr; /* Reduced grid line width */
+    
 }
 
 .timeline__component {
@@ -504,8 +556,6 @@ body {
 .timeline__point {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
     width: 3.75px; /* Reduced width */
     height: 3.75px; /* Reduced height */
     background: #ffffff;
@@ -520,7 +570,6 @@ body {
 .timeline__date {
     font-size: 3.75rem; /* Reduced font size */
     transform: translateY(100px); /* Reduced translateY */
-    padding-left: 50px; /* Reduced padding-left */
 }
 
 
@@ -529,7 +578,6 @@ body {
 .timeline__date--right {
     text-align: right;
     font-size: 3.75rem; /* Reduced font size */
-    padding-right: 50px; /* Reduced padding-right */
 }
 
 .timeline__title {
