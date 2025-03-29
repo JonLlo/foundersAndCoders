@@ -270,6 +270,33 @@ const fastForwardButton = document.getElementById('fast-forward-button');
         }
     });
     
+    document.getElementById('revealButton-photo-baby').addEventListener('click', function() {
+        var hiddenPhoto = document.getElementById('hiddenContent-photo-baby');
+        
+        if (hiddenPhoto.style.display === 'block') {
+            hiddenPhoto.style.display = 'none';
+            
+            // Toggle button text based on the isSpanish flag
+            if (!isSpanish) {
+                this.innerText = 'Click here to see a picture of me when I was small'; // English text
+            }
+            if (isSpanish) {
+                this.innerText = 'some spanish'; // Spanish text
+            }
+        } else {
+            hiddenPhoto.style.display = 'block';
+
+            
+            // Change button text when content is revealed
+            if (!isSpanish) {
+                this.innerText = 'Hide Photo'; // English text
+            }
+            if (isSpanish) {
+                this.innerText = '¡Ocultar foto!'; // Spanish text
+            }
+        }
+    });
+
 
 
 

@@ -652,7 +652,6 @@ iframe {
 
 
 
-
 /*DJ/*/
 .reveal-button-dj {
     background-color: #4CAF50; /* Green background */
@@ -786,3 +785,9 @@ iframe {
 
 /*theme*/
 
+#revealButton-photo-baby {
+    display: block;      /* Makes the button behave like a block element */
+    margin-left: auto;   /* Centers the button horizontally */
+    margin-right: auto;  /* Centers the button horizontally */
+    text-align: center;  /* Centers the text inside the button */
+}
