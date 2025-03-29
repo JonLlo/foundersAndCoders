@@ -16,15 +16,33 @@ body {
 
 
 }
-@media (max-width: 586px) {
-    body {
-        overflow-x: auto !important;
+@media (max-width: 499px) {
+   
+    #me {
+        border: 8px solid black;
+
+    }
+    #intro {
+        transform: scale(0.8)
 
     }
     .puzzles, .puzzles-2, .puzzles-3, .puzzles-4 {
-        transform: scale(0.8) translateX(10%); /* Shrinks the content and moves it to the right */
+        transform: scale(0.8) translateX(11.5%); /* Shrinks the content and moves it to the right */
         transform-origin: top left; /* Ensures scaling happens from the top left corner */
         margin-top: 2px;
+    }
+
+    .timeline {
+        transform: scale(0.85) translateX(-11.5%) translate(-11.5%) !important;
+
+
+
+    }
+
+    .projects {
+        transform: scale(0.9); /* Shrinks the content and moves it to the right */
+
+
     }
   
   }
