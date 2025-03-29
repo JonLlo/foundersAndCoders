@@ -870,3 +870,99 @@ iframe {
     transform: translateY(-50px); /* Moves the image 10px upwards */
 
 }
+
+/* Make sure the bottom navbar is fixed at the bottom */
+/* Styling for the footer */
+
+
+
+
+/* Container for the section */
+.next {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-top: 30px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Aligns horizontally */
+    align-items: center;
+}
+
+/* Styling for the social links container */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adds spacing between each link */
+    margin-top: 20px;
+}
+
+/* Styling for individual link items */
+.link-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+/* Link Styling */
+a.tagline {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+/* LinkedIn Specific Styling */
+.linkedin-icon {
+    color: #0077b5; /* LinkedIn Blue */
+}
+
+.linkedin-icon:hover {
+    color: #004c8c; /* Darker LinkedIn blue */
+    text-decoration: underline;
+}
+
+/* GitHub Specific Styling */
+.github-icon {
+    color: #333; /* GitHub Dark Gray */
+}
+
+.github-icon:hover {
+    color:#004c8c; /* GitHub Purple */
+    text-decoration: underline;
+}
+
+/* Optional: Styling for the section's description */
+.next p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 20px;
+    color: white;
+    font-family: circular;
+
+}
+
+
+#thanks {
+    margin-top:20px;
+
+    width: 60%;
+    color: white;
+    font-family: circular;
+
+
+}
+
+.next .link-item {
+    width: 50%;
+    color: black;
+    font-family: circular;
+
+}
+.next {
+    width: 120%; /* Ensures the element takes up the full width of the screen */
+    border-top: 2px solid black; /* Adds a 2px black line at the bottom */
+}

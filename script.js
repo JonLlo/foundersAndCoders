@@ -33,6 +33,15 @@ themeChange.addEventListener('click', () => {
 
     });
 
+ 
+        const thanks = document.getElementById('thanks'); // Get the element
+        if (currentTheme === 1) {
+            thanks.style.color = 'black'; // For lightblue background
+        } else {
+            thanks.style.color = 'white'; // For other backgrounds (lightyellow and darkred)
+        }
+   
+
     // Update originally white text: Black on yellow, White otherwise
     document.querySelectorAll('.original-white').forEach(el => {
         if (currentTheme === 1) {
