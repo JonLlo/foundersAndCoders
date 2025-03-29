@@ -453,13 +453,31 @@ me.addEventListener('mouseleave', () => {
 
 
 
-const toggleElement = document.getElementById('lineIssue');
+const lineIssueElement = document.getElementById('lineIssue');
 
 // Get the value of the data-en attribute
-const dataEn = toggleElement.getAttribute('data-en');
+const dataEn = lineIssueElement.getAttribute('data-en');
 
 // Replace a part of the text with a <br> tag
 const formattedDataEn = dataEn.replace('AND', '<br>AND');
 
 // Set the innerHTML to display with the line break
-toggleElement.innerHTML = formattedDataEn;
+lineIssueElement.innerHTML = formattedDataEn;
+
+
+const lineIssueElement2 = document.getElementById('lineIssue2');
+
+// Get all the <p> elements with the id 'toggle'
+const toggleElements = lineIssueElement2.querySelectorAll('#toggle');
+
+// Iterate through each <p> element to manipulate its text
+toggleElements.forEach((toggleElement) => {
+    // Get the value of the data-es attribute
+    const dataEs = toggleElement.getAttribute('data-es');
+    
+    // Insert <br> after the word "DESARROLLO" for the first <p> element
+    const formattedDataEs = dataEs.replace('¿POR QUÉ DESARROLLO', '¿POR QUÉ DESARROLLO<br>');
+    
+    // Update the innerHTML with the formatted text containing the line break
+    toggleElement.innerHTML = formattedDataEs;
+});
