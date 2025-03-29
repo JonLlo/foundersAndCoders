@@ -17,6 +17,10 @@ body {
 
 }
 @media (max-width: 586px) {
+    body {
+        overflow-x: auto !important;
+
+    }
     .container {
       width: 1%; /* Take up full width on small screens */
     }
