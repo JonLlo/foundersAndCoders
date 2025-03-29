@@ -276,7 +276,7 @@ const fastForwardButton = document.getElementById('fast-forward-button');
                 this.innerText = 'Click here to reveal The Loonies Final season DVD cover...'; // English text
             }
             if (isSpanish) {
-                this.innerText = 'some spanish'; // Spanish text
+                this.innerText = 'Haga clic aquí para revelar la portada del DVD de la temporada final de The Loonies...'; // Spanish text
             }
         } else {
             hiddenPhoto.style.display = 'block';
@@ -302,7 +302,7 @@ const fastForwardButton = document.getElementById('fast-forward-button');
                 this.innerText = 'Click here to see a picture of me when I was small'; // English text
             }
             if (isSpanish) {
-                this.innerText = 'some spanish'; // Spanish text
+                this.innerText = 'Haga clic aquí para ver una foto mía cuando era pequeña.'; // Spanish text
             }
         } else {
             hiddenPhoto.style.display = 'block';
