@@ -1,5 +1,5 @@
 const themeChange = document.getElementById('theme-change');
-const themes = ['lightblue', 'lightyellow', '#3f3f3f']; // Background colors
+const themes = ['lightblue', 'lightyellow', 'rgb(63, 63, 63']; // Background colors
 const buttonThemes = ['#025a5a', '#FFA500', '#121212']; // Button colors (green, orange, dark red)
 let currentTheme = 0; // Track the current theme
 
@@ -14,6 +14,8 @@ document.querySelectorAll('*').forEach(el => {
 
 
 themeChange.addEventListener('click', () => {
+
+
     currentTheme = (currentTheme + 1) % themes.length; // Cycle through themes
     document.body.style.backgroundColor = themes[currentTheme];
 
@@ -46,13 +48,30 @@ themeChange.addEventListener('click', () => {
             }});
 
 
-         
+            updateToggleTextColor();
+
 
     // Adjust body text color for readability
 });
 
 
+// Function to update text color based on the background color
+function updateToggleTextColor() {
 
+    const backgroundColor = window.getComputedStyle(document.body).backgroundColor;
+
+    // Check if the background color is black
+    if (backgroundColor === 'rgb(63, 63, 63)') { 
+        // 'rgb(0, 0, 0)' is black
+        document.querySelectorAll('#toggle').forEach(el => {
+            el.style.color = 'white'; // Set text color to white
+        });
+    } else {
+        document.querySelectorAll('#toggle').forEach(el => {
+            el.style.color = 'black'; // Set text color to black
+        });
+    }
+}
 
 
 
