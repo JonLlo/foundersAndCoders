@@ -18,6 +18,7 @@ themeChange.addEventListener('click', () => {
 
     currentTheme = (currentTheme + 1) % themes.length; // Cycle through themes
     document.body.style.backgroundColor = themes[currentTheme];
+    
 
     // Change navbar and scroll elements
     document.querySelectorAll('.navbar, .scroll').forEach(el => {
@@ -53,6 +54,68 @@ themeChange.addEventListener('click', () => {
 
 
     // Adjust body text color for readability
+
+
+
+
+       // Apply hover and active styles for theme 0
+       if (currentTheme === 0) {
+        document.querySelectorAll('.button-section button').forEach(button => {
+            button.addEventListener('mouseover', () => {
+                button.style.backgroundColor = 'darkblue'; // Hover effect for lightblue theme
+                button.style.transform = 'translateY(-0.5px)'; // Slight upward movement
+                button.style.boxShadow = '0px 1.5px 3px rgba(0, 0, 0, 0.2)'; // Stronger shadow on hover
+            });
+
+            
+
+            button.addEventListener('mouseout', () => {
+                button.style.backgroundColor = buttonThemes[currentTheme]; // Reset to original button color
+                button.style.transform = ''; // Reset transform
+                button.style.boxShadow = ''; // Reset shadow
+            });
+
+            button.addEventListener('mousedown', () => {
+                button.style.backgroundColor = '#025a5a'; // Active effect for lightblue theme
+                button.style.transform = 'translateY(0.25px)'; // Small inward movement on click
+            });
+
+            button.addEventListener('mouseup', () => {
+                button.style.backgroundColor = buttonThemes[currentTheme]; // Reset to original button color
+                button.style.transform = ''; // Reset transform
+            });
+        });
+        document.querySelectorAll('.reveal-button').forEach(button => {
+
+            // Hover effect for buttons
+            button.addEventListener('mouseover', () => {
+                button.style.backgroundColor = 'darkblue'; // Hover effect for darkblue
+                button.style.transform = 'translateY(-0.5px)'; // Slight upward movement
+                button.style.boxShadow = '0px 1.5px 3px rgba(0, 0, 0, 0.2)'; // Stronger shadow on hover
+            });
+        
+            // Reset button styles when mouse is out
+            button.addEventListener('mouseout', () => {
+                button.style.backgroundColor = '#025a5a'; // Reset to original button color (e.g., green)
+                button.style.transform = ''; // Reset transform
+                button.style.boxShadow = ''; // Reset shadow
+            });
+        
+            // Active effect for buttons when clicked
+            button.addEventListener('mousedown', () => {
+                button.style.backgroundColor = '#025a5a'; // Active effect for lightblue theme
+                button.style.transform = 'translateY(0.25px)'; // Small inward movement on click
+            });
+        
+            // Reset button styles when mouse button is released
+            button.addEventListener('mouseup', () => {
+                button.style.backgroundColor = '#025a5a'; // Reset to original button color
+                button.style.transform = ''; // Reset transform
+                button.style.boxShadow = ''; // Reset shadow
+            });
+        });
+        
+    }
 });
 
 

@@ -269,7 +269,7 @@ button {
 .button {
     width: 225px; /* Reduced width */
     height: 250px; /* Reduced height */
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+    background-color: #025a5a;    /* Green background for the button */
     border-radius: 5px;
     backdrop-filter: blur(2.5px);
     display: flex;
@@ -286,6 +286,8 @@ button {
 
 .button:hover {
     transform: scale(1.1);
+    background-color: darkblue !important; /* Darker green when hovered */
+
     box-shadow: 0px 3.75px 7.5px rgba(0, 0, 0, 0.5);
 }
 
@@ -633,6 +635,13 @@ button {
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s ease; /* Smooth color transition */
 }
+/* Hover effect for the button inside button-section */
+.reveal-button:hover {
+    background-color: darkblue; /* Darker green when hovered */
+    transform: translateY(-0.5px); /* Slight upward movement on hover */
+    box-shadow: 0px 1.5px 3px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
 
 #dissertation {
     margin-top: 5px; /* Reduced margin-top */
