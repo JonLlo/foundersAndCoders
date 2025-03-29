@@ -21,9 +21,12 @@ body {
         overflow-x: auto !important;
 
     }
-    .container {
-      width: 1%; /* Take up full width on small screens */
+    .puzzles, .puzzles-2, .puzzles-3, .puzzles-4 {
+        transform: scale(0.8) translateX(10%); /* Shrinks the content and moves it to the right */
+        transform-origin: top left; /* Ensures scaling happens from the top left corner */
+        margin-top: 2px;
     }
+  
   }
 
 
