@@ -14,6 +14,7 @@ body {
 
 
 
+
 }
 @media (max-width: 586px) {
     .container {
@@ -21,6 +22,12 @@ body {
     }
   }
 
+
+
+button {
+
+    border-radius: 2px !important;
+}
 
 
 /*change theme button*/
@@ -45,7 +52,7 @@ body {
     font-size: 20px;
     font-style: italic;
     font-family: circular;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 

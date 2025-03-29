@@ -41,6 +41,7 @@ themeChange.addEventListener('click', () => {
         }});
 
         document.querySelectorAll('.nameJon').forEach(el => {
+         
             if (currentTheme === 2) {
                 el.style.color = 'white'; // For lightblue background
             } else {
