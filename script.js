@@ -76,7 +76,7 @@ themeChange.addEventListener('click', () => {
         });
 
         document.querySelectorAll('.autofill, .autofill-2, .autofill-4').forEach(button => {
-            button.addEventListener('mouseover', handleButtonHover);
+            button.addEventListener('mouseover', handleButtonHoverAuto);
             button.addEventListener('mouseout', handleButtonMouseOut);
             button.addEventListener('mousedown', handleButtonMouseDown);
             button.addEventListener('mouseup', handleButtonMouseUp);
@@ -137,6 +137,11 @@ themeChange.addEventListener('click', () => {
 function handleButtonHover(event) {
     event.target.style.backgroundColor = 'darkblue'; // Hover effect for lightblue theme
     event.target.style.transform = 'translateY(-0.5px)'; // Slight upward movement
+    event.target.style.boxShadow = '0px 1.5px 3px rgba(0, 0, 0, 0.2)'; // Stronger shadow on hover
+}
+function handleButtonHoverAuto(event) {
+    event.target.style.backgroundColor = 'darkblue'; // Hover effect for lightblue theme
+    event.target.style.transform = 'translateY(-20.5px)'; // Slight upward movement
     event.target.style.boxShadow = '0px 1.5px 3px rgba(0, 0, 0, 0.2)'; // Stronger shadow on hover
 }
 
