@@ -11,6 +11,8 @@ document.querySelectorAll('*').forEach(el => {
     }
 });
 
+
+
 themeChange.addEventListener('click', () => {
     currentTheme = (currentTheme + 1) % themes.length; // Cycle through themes
     document.body.style.backgroundColor = themes[currentTheme];
@@ -44,7 +46,7 @@ themeChange.addEventListener('click', () => {
             }});
 
 
-
+         
 
     // Adjust body text color for readability
 });
