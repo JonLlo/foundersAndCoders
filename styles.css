@@ -17,9 +17,15 @@ body {
 
 }
 @media (max-width: 499px) {
+
+   body {
+        height: 90vh; /* Limit the height to 90% of the viewport height */
+
+   }
+   
    
     #me {
-        border: 8px solid black;
+        border: 8px solid black !important;
 
     }
     #intro {
@@ -49,7 +55,7 @@ body {
     }
 
     .gaz {
-        transform:  translateX(-5%); /* Shrinks the content and moves it to the right */
+        transform:  translateX(-10%); /* Shrinks the content and moves it to the right */
 
     }
 
@@ -62,12 +68,24 @@ body {
 
     .next {
         border: 2px solid black;
-        transform: scale(0.8) translateY(-450%);
+        transform:  translateY(-200%) translateX(13%) !important;
+
 
     }
 
     .t {
-        transform:  translateX(-7%); /* Shrinks the content and moves it to the right */
+        transform: translateX(0%) !important; /* Shrinks the content and moves it to the right */
+
+
+    }
+    #compDirh1 {
+        transform: translateX(0%) !important; /* Shrinks the content and moves it to the right */
+
+
+    }
+
+    .companyDesc {
+        transform: translateX(0%) !important; /* Shrinks the content and moves it to the right */
 
 
     }
@@ -452,7 +470,19 @@ button {
 }
 
 
-@media screen and (max-width: 730px) {
+
+
+@media screen and (max-width: 730px) and (min-width: 500px) {
+
+.companyDesc {
+    transform: translateX(0%) !important;  /* Move the timeline 20px horizontally */
+
+
+}
+
+}
+
+@media screen and (max-width: 730px)  {
     .puzzles, .puzzles-2, .puzzles-3, .puzzles-4 {
         flex-direction: column; /* Stack the puzzle container vertically */
         align-items: center; /* Center items */
@@ -492,10 +522,16 @@ button {
 
 
     #me {
+        border: 2px solid red;
         width: 140px; /* Set the width of the image */
         height: 140px;
         margin-left: 25px; 
         
+    }
+
+    #compDirh1 {
+        transform: translateX(46px)
+
     }
 
     .section-one h1 {
@@ -521,6 +557,8 @@ button {
         transform: translateX(-15px);  /* Move the timeline 20px horizontally */
     }
 
+   
+
     .gaz p {
         min-width: 90%;
         max-width: 90%; /* Limit the width of the text block */
@@ -528,8 +566,24 @@ button {
         margin-top: 50px; /* Reduced spacing between iframe and text */
         font-style: italic;
         text-align: center;
+        transform: translateX(40px);  /* Move the timeline 20px horizontally */
+
 
     }
+
+    .t {
+        transform: translateX(55px);  /* Move the timeline 20px horizontally */
+
+
+    }
+
+    .if {
+        transform: translateX(55px);  /* Move the timeline 20px horizontally */
+
+
+    }
+
+ 
   
 
     
@@ -943,6 +997,11 @@ iframe {
     flex-direction: column;
     justify-content: center; /* Aligns horizontally */
     align-items: center;
+    border: 2px solid black;
+    width: 80%;
+    margin-bottom: 20px;
+    justify-items: center;
+    
 }
 
 /* Styling for the social links container */
@@ -991,32 +1050,45 @@ a.tagline {
     text-decoration: underline;
 }
 
-/* Optional: Styling for the section's description */
+/* Style for the paragraph inside .next */
 .next p {
     font-size: 1.2rem;
     color: white;
     margin-bottom: 20px;
-    color: white;
     font-family: circular;
-
 }
 
-
+/* Style for the #thanks paragraph */
 #thanks {
-    margin-top:20px;
-
+    margin-top: 20px;
     color: white;
     font-family: circular;
-
-
 }
 
+/* Style for each link-item */
 .next .link-item {
-    width: 50%;
+    display: flex; /* Use flex to align label and link on the same line */
+    align-items: center; /* Align the items vertically in the center */
+    gap: 10px; /* Add some space between the label and the link */
     color: black;
     font-family: circular;
-
+    margin-bottom: 10px; /* Add some space between each link item */
 }
+
+/* Make the link-item take full width */
+.next .link-item span {
+    font-weight: bold; /* Make the label (e.g., LinkedIn, GitHub) bold */
+}
+
+/* Optional: Styling for the links (to make them look consistent) */
+.tagline {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent or set a color here */
+}
+
+/* Optional: Styling for the next section */
 .next {
-    border-top: 2px solid black; /* Adds a 2px black line at the bottom */
+    border-top: 2px solid black; /* Adds a 2px black line at the top */
+    transform: translateX(11%);
+    padding: 10px; /* Add some padding to the container */
 }
