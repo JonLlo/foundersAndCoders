@@ -33,15 +33,36 @@ body {
     }
 
     .timeline {
-        transform: scale(0.85) translateX(-11.5%) translate(-11.5%) !important;
+        transform: scale(0.85)  translateX(-11.5%) !important;
 
 
 
     }
 
     .projects {
-        transform: scale(0.9); /* Shrinks the content and moves it to the right */
+        transform: scale(0.8) translateX(11.5%); /* Shrinks the content and moves it to the right */
 
+
+    }
+
+    .gaz {
+        transform:  translateX(-5%); /* Shrinks the content and moves it to the right */
+
+    }
+
+    #compDir {
+        transform:  translateX(-11%); /* Shrinks the content and moves it to the right */
+
+
+    }
+    #compDirh1 {
+        transform:  translateX(7%); /* Shrinks the content and moves it to the right */
+
+
+    }
+
+    .next {
+        transform: scale(0.8)
 
     }
   
