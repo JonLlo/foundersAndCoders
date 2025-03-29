@@ -949,7 +949,6 @@ a.tagline {
 #thanks {
     margin-top:20px;
 
-    width: 60%;
     color: white;
     font-family: circular;
 
@@ -963,6 +962,5 @@ a.tagline {
 
 }
 .next {
-    width: 120%; /* Ensures the element takes up the full width of the screen */
     border-top: 2px solid black; /* Adds a 2px black line at the bottom */
 }
