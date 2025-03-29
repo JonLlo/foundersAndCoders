@@ -17,58 +17,7 @@ themeChange.addEventListener('click', () => {
 
 
     currentTheme = (currentTheme + 1) % themes.length; // Cycle through themes
-    document.body.style.backgroundColor = themes[currentTheme];
-    
-
-    // Change navbar and scroll elements
-    document.querySelectorAll('.navbar, .scroll').forEach(el => {
-        el.style.backgroundColor = themes[currentTheme];
-    });
-
-    // Change all buttons (including the theme change button itself)
-    // Change all buttons (including the theme change button itself)
-    document.querySelectorAll('button').forEach(button => {
-        button.style.backgroundColor = buttonThemes[currentTheme];
-
-
-    });
-
- 
-        const thanks = document.getElementById('thanks'); // Get the element
-        if (currentTheme === 1) {
-            thanks.style.color = 'black'; // For lightblue background
-        } else {
-            thanks.style.color = 'white'; // For other backgrounds (lightyellow and darkred)
-        }
-   
-
-    // Update originally white text: Black on yellow, White otherwise
-    document.querySelectorAll('.original-white').forEach(el => {
-        if (currentTheme === 1) {
-            el.style.color = 'black'; // For lightblue background
-        } else {
-            el.style.color = 'white'; // For other backgrounds (lightyellow and darkred)
-        }});
-
-        document.querySelectorAll('.nameJon').forEach(el => {
-         
-            if (currentTheme === 2) {
-                el.style.color = 'white'; // For lightblue background
-            } else {
-                el.style.color = 'black'; // For other backgrounds (lightyellow and darkred)
-            }});
-
-
-            updateToggleTextColor();
-
-
-    // Adjust body text color for readability
-
-
-
-
-       // Apply hover and active styles for theme 0
-       if (currentTheme === 0) {
+    if (currentTheme === 0) {
         document.querySelectorAll('.button-section button').forEach(button => {
             button.addEventListener('mouseover', () => {
                 button.style.backgroundColor = 'darkblue'; // Hover effect for lightblue theme
@@ -200,6 +149,60 @@ themeChange.addEventListener('click', () => {
         });
         
     }
+
+   
+    document.body.style.backgroundColor = themes[currentTheme];
+    
+
+    // Change navbar and scroll elements
+    document.querySelectorAll('.navbar, .scroll').forEach(el => {
+        el.style.backgroundColor = themes[currentTheme];
+    });
+
+    // Change all buttons (including the theme change button itself)
+    // Change all buttons (including the theme change button itself)
+    document.querySelectorAll('button').forEach(button => {
+        button.style.backgroundColor = buttonThemes[currentTheme];
+
+
+    });
+
+ 
+        const thanks = document.getElementById('thanks'); // Get the element
+        if (currentTheme === 1) {
+            thanks.style.color = 'black'; // For lightblue background
+        } else {
+            thanks.style.color = 'white'; // For other backgrounds (lightyellow and darkred)
+        }
+   
+
+    // Update originally white text: Black on yellow, White otherwise
+    document.querySelectorAll('.original-white').forEach(el => {
+        if (currentTheme === 1) {
+            el.style.color = 'black'; // For lightblue background
+        } else {
+            el.style.color = 'white'; // For other backgrounds (lightyellow and darkred)
+        }});
+
+        document.querySelectorAll('.nameJon').forEach(el => {
+         
+            if (currentTheme === 2) {
+                el.style.color = 'white'; // For lightblue background
+            } else {
+                el.style.color = 'black'; // For other backgrounds (lightyellow and darkred)
+            }});
+
+
+            updateToggleTextColor();
+
+
+    // Adjust body text color for readability
+
+
+
+
+       // Apply hover and active styles for theme 0
+   
 });
 
 
