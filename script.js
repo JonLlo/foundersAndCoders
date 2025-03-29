@@ -14,196 +14,151 @@ document.querySelectorAll('*').forEach(el => {
 
 
 themeChange.addEventListener('click', () => {
+    // Cycle through themes
+    currentTheme = (currentTheme + 1) % themes.length;
 
-
-    currentTheme = (currentTheme + 1) % themes.length; // Cycle through themes
-    if (currentTheme === 0) {
+    // Remove styles and event listeners for theme 0
+    if (currentTheme !== 0) {
+        // Reset styles for buttons and remove event listeners when the theme is not 0
         document.querySelectorAll('.button-section button').forEach(button => {
-            button.addEventListener('mouseover', () => {
-                button.style.backgroundColor = 'darkblue'; // Hover effect for lightblue theme
-                button.style.transform = 'translateY(-0.5px)'; // Slight upward movement
-                button.style.boxShadow = '0px 1.5px 3px rgba(0, 0, 0, 0.2)'; // Stronger shadow on hover
-            });
-
-            
-
-            button.addEventListener('mouseout', () => {
-                button.style.backgroundColor = buttonThemes[currentTheme]; // Reset to original button color
-                button.style.transform = ''; // Reset transform
-                button.style.boxShadow = ''; // Reset shadow
-            });
-
-            button.addEventListener('mousedown', () => {
-                button.style.backgroundColor = '#025a5a'; // Active effect for lightblue theme
-                button.style.transform = 'translateY(0.25px)'; // Small inward movement on click
-            });
-
-            button.addEventListener('mouseup', () => {
-                button.style.backgroundColor = buttonThemes[currentTheme]; // Reset to original button color
-                button.style.transform = ''; // Reset transform
-            });
+            button.removeEventListener('mouseover', handleButtonHover);
+            button.removeEventListener('mouseout', handleButtonMouseOut);
+            button.removeEventListener('mousedown', handleButtonMouseDown);
+            button.removeEventListener('mouseup', handleButtonMouseUp);
+            button.style.backgroundColor = ''; // Reset background color
+            button.style.transform = ''; // Reset transform
+            button.style.boxShadow = ''; // Reset box shadow
         });
+        // Same reset for other buttons
         document.querySelectorAll('.reveal-button').forEach(button => {
-
-            // Hover effect for buttons
-            button.addEventListener('mouseover', () => {
-                button.style.backgroundColor = 'darkblue'; // Hover effect for darkblue
-                button.style.transform = 'translateY(-0.5px)'; // Slight upward movement
-                button.style.boxShadow = '0px 1.5px 3px rgba(0, 0, 0, 0.2)'; // Stronger shadow on hover
-            });
-        
-            // Reset button styles when mouse is out
-            button.addEventListener('mouseout', () => {
-                button.style.backgroundColor = '#025a5a'; // Reset to original button color (e.g., green)
-                button.style.transform = ''; // Reset transform
-                button.style.boxShadow = ''; // Reset shadow
-            });
-        
-            // Active effect for buttons when clicked
-            button.addEventListener('mousedown', () => {
-                button.style.backgroundColor = '#025a5a'; // Active effect for lightblue theme
-                button.style.transform = 'translateY(0.25px)'; // Small inward movement on click
-            });
-        
-            // Reset button styles when mouse button is released
-            button.addEventListener('mouseup', () => {
-                button.style.backgroundColor = '#025a5a'; // Reset to original button color
-                button.style.transform = ''; // Reset transform
-                button.style.boxShadow = ''; // Reset shadow
-            });
+            button.removeEventListener('mouseover', handleButtonHover);
+            button.removeEventListener('mouseout', handleButtonMouseOut);
+            button.removeEventListener('mousedown', handleButtonMouseDown);
+            button.removeEventListener('mouseup', handleButtonMouseUp);
+            button.style.backgroundColor = '';
+            button.style.transform = '';
+            button.style.boxShadow = '';
         });
-        // Add event listeners to the autofill buttons and others
         document.querySelectorAll('.autofill, .autofill-2, .autofill-4').forEach(button => {
-
-            // Hover effect for buttons
-            button.addEventListener('mouseover', () => {
-                if (currentTheme === 0) {
-                    button.style.backgroundColor = 'darkblue'; // Hover effect for darkblue in theme 0
-                    button.style.transform = 'translateY(-20.5px)'; // Slight upward movement
-                    button.style.boxShadow = '0px 1.5px 3px rgba(0, 0, 0, 0.2)'; // Stronger shadow on hover
-                }
-            });
-
-            // Reset button styles when mouse is out
-            button.addEventListener('mouseout', () => {
-                if (currentTheme === 0) {
-                    button.style.backgroundColor = buttonThemes[currentTheme]; // Reset to original button color (green for theme 0)
-                    button.style.transform = ''; // Reset transform
-                    button.style.boxShadow = ''; // Reset shadow
-                }
-            });
-
-            // Active effect for buttons when clicked
-            button.addEventListener('mousedown', () => {
-                if (currentTheme === 0) {
-                    button.style.backgroundColor = '#025a5a'; // Even darker green for active state in theme 0
-                    button.style.transform = 'translateY(-19.75px)'; // Small inward movement when clicked
-                }
-            });
-
-            // Reset button styles when mouse button is released
-            button.addEventListener('mouseup', () => {
-                if (currentTheme === 0) {
-                    button.style.backgroundColor = buttonThemes[currentTheme]; // Reset to original button color (green)
-                    button.style.transform = ''; // Reset transform
-                    button.style.boxShadow = ''; // Reset shadow
-                }
-            });
+            button.removeEventListener('mouseover', handleButtonHover);
+            button.removeEventListener('mouseout', handleButtonMouseOut);
+            button.removeEventListener('mousedown', handleButtonMouseDown);
+            button.removeEventListener('mouseup', handleButtonMouseUp);
+            button.style.backgroundColor = '';
+            button.style.transform = '';
+            button.style.boxShadow = '';
         });
         document.querySelectorAll('.autofill-3').forEach(button => {
-
-            // Hover effect for buttons
-            button.addEventListener('mouseover', () => {
-                if (currentTheme === 0) {
-                    button.style.backgroundColor = 'darkblue'; // Hover effect for darkblue in theme 0
-                    button.style.transform = 'translateY(-0.5px)'; // Slight upward movement
-                    button.style.boxShadow = '0px 1.5px 3px rgba(0, 0, 0, 0.2)'; // Stronger shadow on hover
-                }
-            });
-
-            // Reset button styles when mouse is out
-            button.addEventListener('mouseout', () => {
-                if (currentTheme === 0) {
-                    button.style.backgroundColor = buttonThemes[currentTheme]; // Reset to original button color (green for theme 0)
-                    button.style.transform = ''; // Reset transform
-                    button.style.boxShadow = ''; // Reset shadow
-                }
-            });
-
-            // Active effect for buttons when clicked
-            button.addEventListener('mousedown', () => {
-                if (currentTheme === 0) {
-                    button.style.backgroundColor = '#025a5a'; // Even darker green for active state in theme 0
-                    button.style.transform = 'translateY(-0.25px)'; // Small inward movement when clicked
-                }
-            });
-
-            // Reset button styles when mouse button is released
-            button.addEventListener('mouseup', () => {
-                if (currentTheme === 0) {
-                    button.style.backgroundColor = buttonThemes[currentTheme]; // Reset to original button color (green)
-                    button.style.transform = ''; // Reset transform
-                    button.style.boxShadow = ''; // Reset shadow
-                }
-            });
+            button.removeEventListener('mouseover', handleButtonHover);
+            button.removeEventListener('mouseout', handleButtonMouseOut);
+            button.removeEventListener('mousedown', handleButtonMouseDown);
+            button.removeEventListener('mouseup', handleButtonMouseUp);
+            button.style.backgroundColor = '';
+            button.style.transform = '';
+            button.style.boxShadow = '';
         });
-        
     }
 
-   
+    // Apply styles when currentTheme is 0
+    if (currentTheme === 0) {
+        document.querySelectorAll('.button-section button').forEach(button => {
+            button.addEventListener('mouseover', handleButtonHover);
+            button.addEventListener('mouseout', handleButtonMouseOut);
+            button.addEventListener('mousedown', handleButtonMouseDown);
+            button.addEventListener('mouseup', handleButtonMouseUp);
+        });
+
+        document.querySelectorAll('.reveal-button').forEach(button => {
+            button.addEventListener('mouseover', handleButtonHover);
+            button.addEventListener('mouseout', handleButtonMouseOut);
+            button.addEventListener('mousedown', handleButtonMouseDown);
+            button.addEventListener('mouseup', handleButtonMouseUp);
+        });
+
+        document.querySelectorAll('.autofill, .autofill-2, .autofill-4').forEach(button => {
+            button.addEventListener('mouseover', handleButtonHover);
+            button.addEventListener('mouseout', handleButtonMouseOut);
+            button.addEventListener('mousedown', handleButtonMouseDown);
+            button.addEventListener('mouseup', handleButtonMouseUp);
+        });
+
+        document.querySelectorAll('.autofill-3').forEach(button => {
+            button.addEventListener('mouseover', handleButtonHover);
+            button.addEventListener('mouseout', handleButtonMouseOut);
+            button.addEventListener('mousedown', handleButtonMouseDown);
+            button.addEventListener('mouseup', handleButtonMouseUp);
+        });
+    }
+
+    // Change the body background color according to the theme
     document.body.style.backgroundColor = themes[currentTheme];
     
-
-    // Change navbar and scroll elements
+    // Change navbar and scroll elements background color
     document.querySelectorAll('.navbar, .scroll').forEach(el => {
         el.style.backgroundColor = themes[currentTheme];
     });
 
     // Change all buttons (including the theme change button itself)
-    // Change all buttons (including the theme change button itself)
     document.querySelectorAll('button').forEach(button => {
         button.style.backgroundColor = buttonThemes[currentTheme];
-
-
     });
 
- 
-        const thanks = document.getElementById('thanks'); // Get the element
-        if (currentTheme === 1) {
-            thanks.style.color = 'black'; // For lightblue background
-        } else {
-            thanks.style.color = 'white'; // For other backgrounds (lightyellow and darkred)
-        }
-   
+    // Update the "thanks" text color based on the theme
+    const thanks = document.getElementById('thanks');
+    if (currentTheme === 1) {
+        thanks.style.color = 'black'; // For lightblue background
+    } else {
+        thanks.style.color = 'white'; // For other backgrounds
+    }
 
     // Update originally white text: Black on yellow, White otherwise
     document.querySelectorAll('.original-white').forEach(el => {
         if (currentTheme === 1) {
             el.style.color = 'black'; // For lightblue background
         } else {
-            el.style.color = 'white'; // For other backgrounds (lightyellow and darkred)
-        }});
+            el.style.color = 'white'; // For other backgrounds
+        }
+    });
 
-        document.querySelectorAll('.nameJon').forEach(el => {
-         
-            if (currentTheme === 2) {
-                el.style.color = 'white'; // For lightblue background
-            } else {
-                el.style.color = 'black'; // For other backgrounds (lightyellow and darkred)
-            }});
+    // Update the name color for theme 2
+    document.querySelectorAll('.nameJon').forEach(el => {
+        if (currentTheme === 2) {
+            el.style.color = 'white'; // For lightblue background
+        } else {
+            el.style.color = 'black'; // For other backgrounds
+        }
+    });
 
-
-            updateToggleTextColor();
-
-
-    // Adjust body text color for readability
-
-
-
-
-       // Apply hover and active styles for theme 0
-   
+    // Update the toggle text color
+    updateToggleTextColor();
 });
+
+// Handle hover event for buttons
+function handleButtonHover(event) {
+    event.target.style.backgroundColor = 'darkblue'; // Hover effect for lightblue theme
+    event.target.style.transform = 'translateY(-0.5px)'; // Slight upward movement
+    event.target.style.boxShadow = '0px 1.5px 3px rgba(0, 0, 0, 0.2)'; // Stronger shadow on hover
+}
+
+// Handle mouse out event for buttons
+function handleButtonMouseOut(event) {
+    event.target.style.backgroundColor = buttonThemes[currentTheme]; // Reset to original button color
+    event.target.style.transform = ''; // Reset transform
+    event.target.style.boxShadow = ''; // Reset shadow
+}
+
+// Handle mouse down event for buttons
+function handleButtonMouseDown(event) {
+    event.target.style.backgroundColor = '#025a5a'; // Active effect for lightblue theme
+    event.target.style.transform = 'translateY(0.25px)'; // Small inward movement on click
+}
+
+// Handle mouse up event for buttons
+function handleButtonMouseUp(event) {
+    event.target.style.backgroundColor = buttonThemes[currentTheme]; // Reset to original button color
+    event.target.style.transform = ''; // Reset transform
+}
+
 
 
 // Function to update text color based on the background color
