@@ -252,10 +252,10 @@ const fastForwardButton = document.getElementById('fast-forward-button');
             
             // Toggle button text based on the isSpanish flag
             if (!isSpanish) {
-                this.innerText = 'Click here to reveal The Loonies DVD cover...'; // English text
+                this.innerText = 'Click here to reveal The Loonies Final season DVD cover...'; // English text
             }
             if (isSpanish) {
-                this.innerText = 'Haga clic aquí para revelar la portada de DVD de The Loonies...'; // Spanish text
+                this.innerText = 'some spanish'; // Spanish text
             }
         } else {
             hiddenPhoto.style.display = 'block';

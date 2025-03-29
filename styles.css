@@ -791,3 +791,8 @@ iframe {
     margin-right: auto;  /* Centers the button horizontally */
     text-align: center;  /* Centers the text inside the button */
 }
+#hiddenContent {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
