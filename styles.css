@@ -333,7 +333,7 @@ body {
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     grid-template-rows: repeat(2, 1fr); /* 2 rows */
     gap: 1.25px; /* Reduced gap between pieces */
-    margin-top: 100.5px; /* Reduced margin */
+    margin-top: 99px; /* Reduced margin */
     margin-left: 10px;
 }
 
