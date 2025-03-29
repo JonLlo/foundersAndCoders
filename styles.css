@@ -24,10 +24,7 @@ body {
    }
    
    
-    #me {
-        border: 8px solid black !important;
-
-    }
+  
     #intro {
         transform: scale(0.8)
 
@@ -196,27 +193,7 @@ button {
     margin-top: 7.5px;
     position: relative;
 }
-#speech-bubble {
-    position: absolute;  /* Absolute positioning */
-    display: none;       /* Initially hidden */
-    background-color: white;
-    color: black;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 14px;
-    white-space: nowrap;
-    z-index: 1000;       /* Ensure it appears above other elements */
-    opacity: 0;         
-    transition: opacity 0.3s ease;
-    top: -40px;         
-    left: 50%;     
-     
-    transform: translateY(500%); 
 
-
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-}
 
 /* Text container */
 .text-box-name {
@@ -522,7 +499,6 @@ button {
 
 
     #me {
-        border: 2px solid red;
         width: 140px; /* Set the width of the image */
         height: 140px;
         margin-left: 25px; 
