@@ -338,3 +338,17 @@ me.addEventListener('mouseleave', () => {
     speechBubble.style.display = 'none';   // Hide the speech bubble
     speechBubble.style.opacity = '0';      // Set opacity back to 0 (invisible)
 });
+
+
+
+
+const toggleElement = document.getElementById('lineIssue');
+
+// Get the value of the data-en attribute
+const dataEn = toggleElement.getAttribute('data-en');
+
+// Replace a part of the text with a <br> tag
+const formattedDataEn = dataEn.replace('AND', '<br>AND');
+
+// Set the innerHTML to display with the line break
+toggleElement.innerHTML = formattedDataEn;
