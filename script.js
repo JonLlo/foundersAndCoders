@@ -40,7 +40,7 @@ themeChange.addEventListener('click', () => {
             button.style.boxShadow = '';
         });
         document.querySelectorAll('.autofill, .autofill-2, .autofill-4').forEach(button => {
-            button.removeEventListener('mouseover', handleButtonHover);
+            button.removeEventListener('mouseover', handleButtonHoverAuto);
             button.removeEventListener('mouseout', handleButtonMouseOut);
             button.removeEventListener('mousedown', handleButtonMouseDown);
             button.removeEventListener('mouseup', handleButtonMouseUp);
