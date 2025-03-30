@@ -108,7 +108,7 @@
   
     .next {
       border: 2px solid black;
-      transform: scale(0.8) translateY(-400%) translateX(9.5%) !important;
+      transform: scale(0.8) translateY(-350%) translateX(9.5%) !important;
       padding: 20px;
       width: 90% !important;
       margin-bottom: 200px !important; /* Add space below the box */
@@ -1446,7 +1446,7 @@
   .next {
     border-top: 2px solid black;
     /* Adds a 2px black line at the top */
-    transform: translateX(11%);
+    transform: translateX(12%);
     padding: 10px;
     /* Add some padding to the container */
   }
