@@ -59,13 +59,13 @@
   
     .timeline {
       transform: scale(0.8) translateX(-12.5%) translateY(-12.5%) !important;
-  
-  
-  
+ 
+
     }
   
+  
     .projects {
-      transform: scale(0.8) translateX(11.5%) translateY(-48.5%);
+      transform: scale(0.8) translateX(11.5%) translateY(-68.5%);
       /* Shrinks the content and moves it to the right */
   
   
@@ -87,7 +87,7 @@
   
     .next {
       border: 2px solid black;
-      transform: scale(0.8) translateY(-300%) translateX(9.5%) !important;
+      transform: scale(0.8) translateY(-400%) translateX(9.5%) !important;
       padding: 20px;
       width: 90% !important;
   
@@ -103,7 +103,7 @@
     }
   
     #compDirh1 {
-      transform: translateX(0%) !important;
+      transform: translateX(-3%) !important;
       /* Shrinks the content and moves it to the right */
   
   
@@ -701,6 +701,7 @@
       transform: translateX(-15px);
       /* Move the timeline 20px horizontally */
     }
+    
   
   
   
@@ -841,6 +842,7 @@
   .timeline {
     margin: 0 auto;
     padding: 6.25px;
+    margin-bottom: 80px;
     /* Reduced padding */
     display: grid;
     width: 80vw;
@@ -850,13 +852,20 @@
   
   }
   
+  .gazTitle {
+    padding-top: 60px;
+
+  }
+
+  
   .timeline__component {
     margin-top: 5px;
     /* Reduced margin-top */
     margin: 0 5px 5px 5px;
+    transform: translateY(5px);
     /* Reduced margin */
     opacity: 0;
-    transform: translateY(5px);
+
     /* Reduced translateY */
     animation: fadeInUp linear both;
     animation-timeline: view();
@@ -1235,6 +1244,10 @@
   
   .line-break {
     display: block;
+  }
+
+  #compImg {
+    width: 70%;
   }
   
   
