@@ -161,20 +161,7 @@ button {
 }
 
 
-/* Flexbox Centering for Scroll 
-.main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    min-height: 100vh;
-    height: auto;
-    background-color: black;
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-*/
+
 
 /* Scroll Container */
 .scroll {
@@ -197,7 +184,7 @@ button {
     display: flex; /* Use flexbox to arrange the items side by side */
     align-items: flex-start; /* Vertically center the image and text */
     justify-content: space-between; /* Space out the image and text box */
-    padding: 12.5px; /* Optional: adds padding around the section */
+    padding: 12.5px; 
 }
 
 /* Image */
@@ -960,11 +947,11 @@ iframe {
 
 
   .image-style {
-    width: 100%; /* Make the image responsive, it will scale to the parent container's width */
-    max-width: 600px; /* Max width of the image (adjust as necessary) */
+    width: 100%; /* Make the image responsive,
+    max-width: 600px; /* Max width of the image
     height: auto; /* Maintain the aspect ratio */
-    border-radius: 8px; /* Optional: rounded corners for a more stylish look */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional: shadow for a subtle 3D effect */
+    border-radius: 8px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
     display: block; /* Remove bottom space below image */
     margin: 0 auto; /* Center the image horizontally */
     transform: translateY(-50px); /* Moves the image 10px upwards */
@@ -1070,13 +1057,12 @@ a.tagline {
     font-weight: bold; /* Make the label (e.g., LinkedIn, GitHub) bold */
 }
 
-/* Optional: Styling for the links (to make them look consistent) */
 .tagline {
     text-decoration: none;
     color: inherit; /* Inherit color from parent or set a color here */
 }
 
-/* Optional: Styling for the next section */
+
 .next {
     border-top: 2px solid black; /* Adds a 2px black line at the top */
     transform: translateX(11%);

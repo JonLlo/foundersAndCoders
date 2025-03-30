@@ -1,6 +1,6 @@
 const themeChange = document.getElementById('theme-change');
 const themes = ['lightblue', 'lightyellow', 'rgb(63, 63, 63']; // Background colors
-const buttonThemes = ['#025a5a', '#FFA500', '#121212']; // Button colors (green, orange, dark red)
+const buttonThemes = ['#025a5a', '#FFA500', '#121212']; // Button colors 
 let currentTheme = 0; // Track the current theme
 
 // Find and mark originally white text
@@ -264,7 +264,7 @@ function autoFillGrid() {
     // Clear all drop zones first
 
     // Correct order of pieces, you can adjust these IDs based on the correct order
-    const correctOrder = ['piece1', 'piece2', 'piece3', 'piece4', 'piece5', 'piece6']; // Replace with your actual piece IDs
+    const correctOrder = ['piece1', 'piece2', 'piece3', 'piece4', 'piece5', 'piece6']; 
 
     // Loop over the correct order of pieces and place them in the respective drop zones
     correctOrder.forEach((pieceId, index) => {
@@ -357,7 +357,7 @@ const playButton = document.getElementById('play-button')
 const fastForwardButton = document.getElementById('fast-forward-button');
 
 
-    // Play the audio when th
+  
    
     playButton.addEventListener('click', function() {
         if (audioPlayer.paused) {

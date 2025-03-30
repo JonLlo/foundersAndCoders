@@ -52,8 +52,7 @@ function checkCompletion2() {
 autoFill2.addEventListener('click', autoFillGrid2);
 
 function autoFillGrid2() {
-    // Correct order of pieces, adjust IDs based on the correct order
-    const correctOrder = ['piece1-2', 'piece2-2', 'piece3-2', 'piece4-2', 'piece5-2', 'piece6-2']; // Replace with your actual piece IDs
+    const correctOrder = ['piece1-2', 'piece2-2', 'piece3-2', 'piece4-2', 'piece5-2', 'piece6-2']; 
 
     // Loop over the correct order of pieces and place them in the respective drop zones
     correctOrder.forEach((pieceId, index) => {
@@ -105,10 +104,9 @@ function drop3(event) {
     const pieceElementId = event.dataTransfer.getData('elementId');
     const piece = document.getElementById(pieceElementId);
 
-    // Ensure event.target is actually the drop zone
     let dropZone = event.target;
     if (!dropZone.classList.contains('drop-zone-3')) {
-        dropZone = dropZone.closest('.drop-zone-3'); // Get the closest drop-zone parent
+        dropZone = dropZone.closest('.drop-zone-3'); 
     }
 
     if (!dropZone) return; // If no valid drop zone is found, exit
@@ -127,7 +125,6 @@ function checkCompletion3() {
     const allFilled = [...dropZones3].filter(zone => zone !== spareZone3).every(zone => zone.children.length > 0);
     if (allFilled) {
         spareZone3.style.display = 'block'; // Unhide the spare zone once all pieces are placed
-        //autoFill.style.display = 'block'; // Unhide the spare zone once all pieces are placed
 
     }
 }
@@ -142,7 +139,7 @@ function autoFillGrid3() {
     // Clear all drop zones first
 
     // Correct order of pieces, you can adjust these IDs based on the correct order
-    const correctOrder = ['piece1-3', 'piece2-3', 'piece3-3', 'piece4-3', 'piece5-3', 'piece6-3']; // Replace with your actual piece IDs
+    const correctOrder = ['piece1-3', 'piece2-3', 'piece3-3', 'piece4-3', 'piece5-3', 'piece6-3'];
 
     // Loop over the correct order of pieces and place them in the respective drop zones
     correctOrder.forEach((pieceId, index) => {
@@ -159,7 +156,6 @@ function autoFillGrid3() {
 
 }
 
-/*4*/
 
 const pieces4 = document.querySelectorAll('.puzzle-piece-4');
 const dropZones4 = document.querySelectorAll('.drop-zone-4');
@@ -189,7 +185,6 @@ function drop4(event) {
     const pieceElementId = event.dataTransfer.getData('elementId');
     const piece = document.getElementById(pieceElementId);
 
-    // Ensure event.target is actually the drop zone
     let dropZone = event.target;
     if (!dropZone.classList.contains('drop-zone-4')) {
         dropZone = dropZone.closest('.drop-zone-4'); // Get the closest drop-zone parent
@@ -211,7 +206,7 @@ function checkCompletion4() {
     const allFilled = [...dropZones4].filter(zone => zone !== spareZone4).every(zone => zone.children.length > 0);
     if (allFilled) {
         spareZone4.style.display = 'block'; // Unhide the spare zone once all pieces are placed
-        //autoFill.style.display = 'block'; // Unhide the spare zone once all pieces are placed
+ 
 
     }
 }
@@ -222,8 +217,7 @@ autoFill4.addEventListener('click', autoFillGrid4);
 function autoFillGrid4() {
     // Clear all drop zones first
 
-    // Correct order of pieces, you can adjust these IDs based on the correct order
-    const correctOrder = ['piece1-4', 'piece2-4', 'piece3-4', 'piece4-4', 'piece5-4', 'piece6-4']; // Replace with your actual piece IDs
+    const correctOrder = ['piece1-4', 'piece2-4', 'piece3-4', 'piece4-4', 'piece5-4', 'piece6-4']; 
 
     // Loop over the correct order of pieces and place them in the respective drop zones
     correctOrder.forEach((pieceId, index) => {
