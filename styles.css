@@ -822,23 +822,21 @@ iframe {
     font-size: 25px; /* Reduced font size */
     padding: 5px 10px; /* Reduced padding */
     border: none;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #025a5a;    /* Green background for the button */
     border-radius: 12.5px; /* Reduced border-radius */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .play-button:hover {
-    background-color: #45a049; /* Darker green when hovering */
-}
+    background-color: darkblue;}
 
 /* Fast Forward button style */
 .fast-forward-button {
     font-size: 25px; /* Reduced font size */
     padding: 5px 10px; /* Reduced padding */
     border: none;
-    background-color: #4CAF50;
+    background-color: #025a5a;    /* Green background for the button */
     color: white;
     border-radius: 12.5px; /* Reduced border-radius */
     cursor: pointer;
@@ -846,7 +844,7 @@ iframe {
 }
 
 .fast-forward-button:hover {
-    background-color: #45a049;
+    background-color: darkblue;
 }
 
 
