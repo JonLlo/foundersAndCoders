@@ -92,7 +92,7 @@ themeChange.addEventListener('click', () => {
 
     // Change the body background color according to the theme
     document.body.style.backgroundColor = themes[currentTheme];
-    
+
     // Change navbar and scroll elements background color
     document.querySelectorAll('.navbar, .scroll').forEach(el => {
         el.style.backgroundColor = themes[currentTheme];
@@ -139,6 +139,7 @@ function handleButtonHover(event) {
     event.target.style.transform = 'translateY(-0.5px)'; // Slight upward movement
     event.target.style.boxShadow = '0px 1.5px 3px rgba(0, 0, 0, 0.2)'; // Stronger shadow on hover
 }
+
 function handleButtonHoverAuto(event) {
     event.target.style.backgroundColor = 'darkblue'; // Hover effect for lightblue theme
     event.target.style.transform = 'translateY(-20.5px)'; // Slight upward movement
@@ -157,6 +158,7 @@ function handleButtonMouseDown(event) {
     event.target.style.backgroundColor = '#025a5a'; // Active effect for lightblue theme
     event.target.style.transform = 'translateY(0.25px)'; // Small inward movement on click
 }
+
 function handleButtonMouseDownAuto(event) {
     event.target.style.backgroundColor = '#025a5a'; // Active effect for lightblue theme
     event.target.style.transform = 'translateY(-20.75px)'; // Small inward movement on click
@@ -176,7 +178,7 @@ function updateToggleTextColor() {
     const backgroundColor = window.getComputedStyle(document.body).backgroundColor;
 
     // Check if the background color is black
-    if (backgroundColor === 'rgb(63, 63, 63)') { 
+    if (backgroundColor === 'rgb(63, 63, 63)') {
         // 'rgb(0, 0, 0)' is black
         document.querySelectorAll('#toggle').forEach(el => {
             el.style.color = 'white'; // Set text color to white
@@ -191,19 +193,10 @@ function updateToggleTextColor() {
 
 
 
-
-
-
-
-
 const pieces = document.querySelectorAll('.puzzle-piece');
 const dropZones = document.querySelectorAll('.drop-zone');
-const spareZone = document.getElementById('spare-zone'); 
-const autoFill = document.getElementById('autofill'); 
-
-
-
-
+const spareZone = document.getElementById('spare-zone');
+const autoFill = document.getElementById('autofill');
 
 
 
@@ -243,9 +236,9 @@ function drop(event) {
     if (dropZone.children.length === 0) {
         dropZone.appendChild(piece);
         checkCompletion()
-        
-    } 
-    
+
+    }
+
 }
 
 
@@ -268,7 +261,7 @@ function autoFillGrid() {
     // Clear all drop zones first
 
     // Correct order of pieces, you can adjust these IDs based on the correct order
-    const correctOrder = ['piece1', 'piece2', 'piece3', 'piece4', 'piece5', 'piece6']; 
+    const correctOrder = ['piece1', 'piece2', 'piece3', 'piece4', 'piece5', 'piece6'];
 
     // Loop over the correct order of pieces and place them in the respective drop zones
     correctOrder.forEach((pieceId, index) => {
@@ -297,9 +290,6 @@ buttonDis.addEventListener('click', function() {
 
 
 
-
-
-
 // Get references to the button and the hidden content
 const button = document.getElementById('revealButton');
 const hiddenContent = document.getElementById('hiddenContent');
@@ -312,18 +302,18 @@ button.addEventListener('click', function() {
 
         if (!isSpanish) {
             button.innerText = 'Click here to reveal my favourite Maths Theorem'; // Change button text to 'Hide Theorem'
-            }
-            if (isSpanish) {
-                button.innerText = 'Haga clic aquí para descubrir mi teorema de matemáticas favorito'; // Change button text to 'Hide Theorem'
-                }
+        }
+        if (isSpanish) {
+            button.innerText = 'Haga clic aquí para descubrir mi teorema de matemáticas favorito'; // Change button text to 'Hide Theorem'
+        }
     } else {
         hiddenContent.style.display = 'block'; // Show it
         if (!isSpanish) {
-        button.innerText = 'Hide Theorem'; // Change button text to 'Hide Theorem'
+            button.innerText = 'Hide Theorem'; // Change button text to 'Hide Theorem'
         }
         if (isSpanish) {
             button.innerText = 'Teorema de Hide'; // Change button text to 'Hide Theorem'
-            }
+        }
     }
 });
 
@@ -342,18 +332,18 @@ buttonDJ.addEventListener('click', function() {
 
         if (!isSpanish) {
             buttonDJ.innerText = 'Click here to reveal one of my favourite songs that I liked to play at the bars at the time!'; // Change button text to 'Hide Theorem'
-            }
-            if (isSpanish) {
-                buttonDJ.innerText = '¡Haga clic aquí para descubrir una de mis canciones favoritas que me gustaba tocar en los bares en esa época!'; // Change button text to 'Hide Theorem'
-                }
+        }
+        if (isSpanish) {
+            buttonDJ.innerText = '¡Haga clic aquí para descubrir una de mis canciones favoritas que me gustaba tocar en los bares en esa época!'; // Change button text to 'Hide Theorem'
+        }
     } else {
         hiddenContentDJ.style.display = 'block'; // Show it
         if (!isSpanish) {
             buttonDJ.innerText = 'Hide Song'; // Change button text to 'Hide Theorem'
-            }
-            if (isSpanish) {
-                buttonDJ.innerText = '¡Ocultar canción'; // Change button text to 'Hide Theorem'
-                }
+        }
+        if (isSpanish) {
+            buttonDJ.innerText = '¡Ocultar canción'; // Change button text to 'Hide Theorem'
+        }
     }
 });
 
@@ -361,79 +351,77 @@ const playButton = document.getElementById('play-button')
 const fastForwardButton = document.getElementById('fast-forward-button');
 
 
-  
-   
-    playButton.addEventListener('click', function() {
-        if (audioPlayer.paused) {
-            audioPlayer.currentTime = 5;
-            audioPlayer.play(); // Play the audio
-            playButton.innerHTML = '⏸️'; // Change to pause button when playing
-        } else {
-            audioPlayer.pause(); // Pause the audio
-            playButton.innerHTML = '▶️'; // Change to play button when paused
+
+
+playButton.addEventListener('click', function() {
+    if (audioPlayer.paused) {
+        audioPlayer.currentTime = 5;
+        audioPlayer.play(); // Play the audio
+        playButton.innerHTML = '⏸️'; // Change to pause button when playing
+    } else {
+        audioPlayer.pause(); // Pause the audio
+        playButton.innerHTML = '▶️'; // Change to play button when paused
+    }
+});
+
+fastForwardButton.addEventListener('click', function() {
+    audioPlayer.currentTime += 10; // Fast forward by 10 seconds
+});
+
+
+
+document.getElementById('revealButton-photo').addEventListener('click', function() {
+    var hiddenPhoto = document.getElementById('hiddenContent-photo');
+
+    if (hiddenPhoto.style.display === 'block') {
+        hiddenPhoto.style.display = 'none';
+
+        // Toggle button text based on the isSpanish flag
+        if (!isSpanish) {
+            this.innerText = 'Click here to reveal The Loonies Final season DVD cover...'; // English text
         }
-    });
-
-    fastForwardButton.addEventListener('click', function() {
-        audioPlayer.currentTime += 10; // Fast forward by 10 seconds
-    });
-
-
-
-    document.getElementById('revealButton-photo').addEventListener('click', function() {
-        var hiddenPhoto = document.getElementById('hiddenContent-photo');
-        
-        if (hiddenPhoto.style.display === 'block') {
-            hiddenPhoto.style.display = 'none';
-            
-            // Toggle button text based on the isSpanish flag
-            if (!isSpanish) {
-                this.innerText = 'Click here to reveal The Loonies Final season DVD cover...'; // English text
-            }
-            if (isSpanish) {
-                this.innerText = 'Haga clic aquí para revelar la portada del DVD de la temporada final de The Loonies...'; // Spanish text
-            }
-        } else {
-            hiddenPhoto.style.display = 'block';
-            
-            // Change button text when content is revealed
-            if (!isSpanish) {
-                this.innerText = 'Hide Photo'; // English text
-            }
-            if (isSpanish) {
-                this.innerText = '¡Ocultar foto!'; // Spanish text
-            }
+        if (isSpanish) {
+            this.innerText = 'Haga clic aquí para revelar la portada del DVD de la temporada final de The Loonies...'; // Spanish text
         }
-    });
-    
-    document.getElementById('revealButton-photo-baby').addEventListener('click', function() {
-        var hiddenPhoto = document.getElementById('hiddenContent-photo-baby');
-        
-        if (hiddenPhoto.style.display === 'block') {
-            hiddenPhoto.style.display = 'none';
-            
-            // Toggle button text based on the isSpanish flag
-            if (!isSpanish) {
-                this.innerText = 'Click here to see a picture of me when I was small'; // English text
-            }
-            if (isSpanish) {
-                this.innerText = 'Haga clic aquí para ver una foto mía cuando era pequeña.'; // Spanish text
-            }
-        } else {
-            hiddenPhoto.style.display = 'block';
+    } else {
+        hiddenPhoto.style.display = 'block';
 
-            
-            // Change button text when content is revealed
-            if (!isSpanish) {
-                this.innerText = 'Hide Photo'; // English text
-            }
-            if (isSpanish) {
-                this.innerText = '¡Ocultar foto!'; // Spanish text
-            }
+        // Change button text when content is revealed
+        if (!isSpanish) {
+            this.innerText = 'Hide Photo'; // English text
         }
-    });
+        if (isSpanish) {
+            this.innerText = '¡Ocultar foto!'; // Spanish text
+        }
+    }
+});
+
+document.getElementById('revealButton-photo-baby').addEventListener('click', function() {
+    var hiddenPhoto = document.getElementById('hiddenContent-photo-baby');
+
+    if (hiddenPhoto.style.display === 'block') {
+        hiddenPhoto.style.display = 'none';
+
+        // Toggle button text based on the isSpanish flag
+        if (!isSpanish) {
+            this.innerText = 'Click here to see a picture of me when I was small'; // English text
+        }
+        if (isSpanish) {
+            this.innerText = 'Haga clic aquí para ver una foto mía cuando era pequeña.'; // Spanish text
+        }
+    } else {
+        hiddenPhoto.style.display = 'block';
 
 
+        // Change button text when content is revealed
+        if (!isSpanish) {
+            this.innerText = 'Hide Photo'; // English text
+        }
+        if (isSpanish) {
+            this.innerText = '¡Ocultar foto!'; // Spanish text
+        }
+    }
+});
 
 
 
@@ -444,14 +432,14 @@ const speechBubble = document.getElementById('speech-bubble');
 
 // Show the speech bubble when mouse enters
 me.addEventListener('mouseenter', () => {
-    speechBubble.style.display = 'block';  // Make the speech bubble visible
-    speechBubble.style.opacity = '1';      // Set opacity to 1 (make it visible)
+    speechBubble.style.display = 'block'; // Make the speech bubble visible
+    speechBubble.style.opacity = '1'; // Set opacity to 1 (make it visible)
 });
 
 // Hide the speech bubble when mouse leaves
 me.addEventListener('mouseleave', () => {
-    speechBubble.style.display = 'none';   // Hide the speech bubble
-    speechBubble.style.opacity = '0';      // Set opacity back to 0 (invisible)
+    speechBubble.style.display = 'none'; // Hide the speech bubble
+    speechBubble.style.opacity = '0'; // Set opacity back to 0 (invisible)
 });
 
 
@@ -478,10 +466,10 @@ const toggleElements = lineIssueElement2.querySelectorAll('#toggle');
 toggleElements.forEach((toggleElement) => {
     // Get the value of the data-es attribute
     const dataEs = toggleElement.getAttribute('data-es');
-    
+
     // Insert <br> after the word "DESARROLLO" for the first <p> element
     const formattedDataEs = dataEs.replace('¿POR QUÉ DESARROLLO', '¿POR QUÉ DESARROLLO<br>');
-    
+
     // Update the innerHTML with the formatted text containing the line break
     toggleElement.innerHTML = formattedDataEs;
 });

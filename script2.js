@@ -1,7 +1,7 @@
 const pieces2 = document.querySelectorAll('.puzzle-piece-2');
 const dropZones2 = document.querySelectorAll('.drop-zone-2');
-const spareZone2 = document.getElementById('spare-zone-2'); 
-const autoFill2 = document.getElementById('autofill-2'); 
+const spareZone2 = document.getElementById('spare-zone-2');
+const autoFill2 = document.getElementById('autofill-2');
 
 pieces2.forEach(piece => {
     piece.addEventListener('dragstart', dragStart);
@@ -38,7 +38,7 @@ function drop2(event) {
     if (dropZone.children.length === 0) {
         dropZone.appendChild(piece);
         checkCompletion2();
-    } 
+    }
 }
 
 function checkCompletion2() {
@@ -52,7 +52,7 @@ function checkCompletion2() {
 autoFill2.addEventListener('click', autoFillGrid2);
 
 function autoFillGrid2() {
-    const correctOrder = ['piece1-2', 'piece2-2', 'piece3-2', 'piece4-2', 'piece5-2', 'piece6-2']; 
+    const correctOrder = ['piece1-2', 'piece2-2', 'piece3-2', 'piece4-2', 'piece5-2', 'piece6-2'];
 
     // Loop over the correct order of pieces and place them in the respective drop zones
     correctOrder.forEach((pieceId, index) => {
@@ -70,16 +70,12 @@ function autoFillGrid2() {
 
 
 
-
-
-
-
 /*3*/
 
 const pieces3 = document.querySelectorAll('.puzzle-piece-3');
 const dropZones3 = document.querySelectorAll('.drop-zone-3');
-const spareZone3 = document.getElementById('spare-zone-3'); 
-const autoFill3 = document.getElementById('autofill-3'); 
+const spareZone3 = document.getElementById('spare-zone-3');
+const autoFill3 = document.getElementById('autofill-3');
 
 pieces3.forEach(piece => {
     piece.addEventListener('dragstart', dragStart);
@@ -106,7 +102,7 @@ function drop3(event) {
 
     let dropZone = event.target;
     if (!dropZone.classList.contains('drop-zone-3')) {
-        dropZone = dropZone.closest('.drop-zone-3'); 
+        dropZone = dropZone.closest('.drop-zone-3');
     }
 
     if (!dropZone) return; // If no valid drop zone is found, exit
@@ -115,9 +111,9 @@ function drop3(event) {
     if (dropZone.children.length === 0) {
         dropZone.appendChild(piece);
         checkCompletion3()
-        
-    } 
-    
+
+    }
+
 }
 
 
@@ -148,7 +144,7 @@ function autoFillGrid3() {
 
         // Place the piece inside the drop zone
         if (dropZone) {
-           
+
             dropZone.appendChild(piece);
             checkCompletion3()
         }
@@ -159,8 +155,8 @@ function autoFillGrid3() {
 
 const pieces4 = document.querySelectorAll('.puzzle-piece-4');
 const dropZones4 = document.querySelectorAll('.drop-zone-4');
-const spareZone4 = document.getElementById('spare-zone-4'); 
-const autoFill4 = document.getElementById('autofill-4'); 
+const spareZone4 = document.getElementById('spare-zone-4');
+const autoFill4 = document.getElementById('autofill-4');
 
 pieces4.forEach(piece => {
     piece.addEventListener('dragstart', dragStart);
@@ -196,9 +192,9 @@ function drop4(event) {
     if (dropZone.children.length === 0) {
         dropZone.appendChild(piece);
         checkCompletion4()
-        
-    } 
-    
+
+    }
+
 }
 
 
@@ -206,7 +202,7 @@ function checkCompletion4() {
     const allFilled = [...dropZones4].filter(zone => zone !== spareZone4).every(zone => zone.children.length > 0);
     if (allFilled) {
         spareZone4.style.display = 'block'; // Unhide the spare zone once all pieces are placed
- 
+
 
     }
 }
@@ -217,7 +213,7 @@ autoFill4.addEventListener('click', autoFillGrid4);
 function autoFillGrid4() {
     // Clear all drop zones first
 
-    const correctOrder = ['piece1-4', 'piece2-4', 'piece3-4', 'piece4-4', 'piece5-4', 'piece6-4']; 
+    const correctOrder = ['piece1-4', 'piece2-4', 'piece3-4', 'piece4-4', 'piece5-4', 'piece6-4'];
 
     // Loop over the correct order of pieces and place them in the respective drop zones
     correctOrder.forEach((pieceId, index) => {
