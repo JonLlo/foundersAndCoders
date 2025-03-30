@@ -18,6 +18,32 @@
   }
   
   @media (max-width: 499px) {
+
+
+
+    .timeline__component {
+      animation: fadeInUpSmallScreen linear both !important;
+    }
+    
+      .timeline {
+        transform: scale(0.8) translateX(-13.5%) translateY(-12.5%) !important;
+  
+  
+      }
+  
+  
+    @keyframes fadeInUpSmallScreen {
+      from {
+        opacity: 1 !important;
+        transform: translateY(5px);
+        /* Reduced translateY */
+      }
+    
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   
     .navbar {
       transform: scale(0.9) translateX(-2.5%);
@@ -55,17 +81,11 @@
     }
   
   
-  
-  
-    .timeline {
-      transform: scale(0.8) translateX(-12.5%) translateY(-12.5%) !important;
  
-
-    }
   
   
     .projects {
-      transform: scale(0.8) translateX(11.5%) translateY(-68.5%);
+      transform: scale(0.8) translateX(11.5%) translateY(-70.5%);
       /* Shrinks the content and moves it to the right */
   
   
@@ -73,6 +93,7 @@
   
     .gaz {
       transform: translateX(-15%);
+      
       /* Shrinks the content and moves it to the right */
   
     }
@@ -90,17 +111,15 @@
       transform: scale(0.8) translateY(-400%) translateX(9.5%) !important;
       padding: 20px;
       width: 90% !important;
+      margin-bottom: 200px !important; /* Add space below the box */
+
   
   
   
     }
+
+   
   
-    .t {
-      transform: translateX(0%) !important;
-      /* Shrinks the content and moves it to the right */
-  
-  
-    }
   
     #compDirh1 {
       transform: translateX(-3%) !important;
@@ -112,6 +131,30 @@
     .companyDesc {
       transform: translateX(0%) !important;
       /* Shrinks the content and moves it to the right */
+  
+  
+    }
+
+
+    .t {
+
+      transform: translateX(-15px) !important;
+      /* Move the timeline 20px horizontally */
+  
+  
+    }
+
+    .gazTitle {
+
+      transform: translateX(-20px) !important;
+      /* Move the timeline 20px horizontally */
+  
+  
+    }
+  
+    .if {
+      transform: translateX(41px) !important;
+      /* Move the timeline 20px horizontally */
   
   
     }
@@ -596,6 +639,26 @@
   
   
     }
+      .t {
+      transform: translateX(55px) !important;
+      /* Move the timeline 20px horizontally */
+  
+  
+    }
+
+    .gazTitle {
+      transform: translateX(55px) !important;
+      /* Move the timeline 20px horizontally */
+  
+  
+    }
+  
+    .if {
+      transform: translateX(85px) !important;
+      /* Move the timeline 20px horizontally */
+  
+  
+    }
   
   }
   
@@ -721,19 +784,7 @@
   
     }
   
-    .t {
-      transform: translateX(55px);
-      /* Move the timeline 20px horizontally */
   
-  
-    }
-  
-    .if {
-      transform: translateX(55px);
-      /* Move the timeline 20px horizontally */
-  
-  
-    }
   
   
   
@@ -871,6 +922,24 @@
     animation-timeline: view();
     animation-range: entry 20% cover 50%;
   }
+
+
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(5px);
+      /* Reduced translateY */
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+
   
   .timeline__component--bg {
     padding: 0.375em;
@@ -939,18 +1008,7 @@
     /* Reduced font size */
   }
   
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(5px);
-      /* Reduced translateY */
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+
   
   /* Center only the button in its container using Flexbox */
   .rev-button-container {
@@ -1247,7 +1305,7 @@
   }
 
   #compImg {
-    width: 70%;
+    width: 90%;
   }
   
   
